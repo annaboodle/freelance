@@ -1,0 +1,117 @@
+
+.global-footer {
+    padding-top: 50px;
+    padding-bottom: 10px
+}
+@media (min-width:800px) {
+    .global-footer {
+        padding-bottom: 50px
+    }
+}
+.global-footer h6 {
+    font-family: "nokia-pure-headline-regular";
+    border-bottom: 1px solid #bec8d2;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    text-align: left
+}
+@media (min-width:800px) {
+    .global-footer h6 {
+        border-bottom: none
+    }
+}
+.global-footer ul,
+.global-footer li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left
+}
+.global-footer ul {
+    display: none
+}
+@media (min-width:800px) {
+    .global-footer ul {
+        display: block
+    }
+}
+.global-footer .some {
+    margin-top: 27px;
+    text-align: center
+}
+@media (min-width:800px) {
+    .global-footer .some {
+        margin-top: 9px;
+        text-align: right
+    }
+}
+.global-footer .some a {
+    margin-left: 8px
+}
+.global-footer .some a:first-child {
+    margin-left: 0
+}
+.nokia-footer-block {
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 15.6px;
+    line-height: .975rem;
+    color: #4d5766
+}
+.nokia-footer-block a {
+    color: #4d5766
+}
+.nokia-footer-block a.language-link {
+    padding: 25px 0;
+    text-align: center;
+    color: #124191
+}
+.nokia-footer-block a.language-link:before {
+    margin-right: 10px
+}
+@media (min-width:800px) {
+    .nokia-footer-block a.language-link {
+        text-align: right;
+        padding: 4px 0
+    }
+}
+.nokia-footer-block .copyright,
+.nokia-footer-block .footer-menu {
+    text-align: center;
+    padding-top: .85em
+}
+.nokia-footer-block ul.menu {
+    margin: 0;
+    padding: 0
+}
+.nokia-footer-block ul.menu li {
+    display: inline;
+    margin: 0 20px;
+    padding: 0
+}
+.nokia-footer-block ul.menu li a:hover {
+    color: #124191
+}
+@media (min-width:800px) {
+    .nokia-footer-block {
+        font-size: 14px;
+        font-size: .875rem;
+        line-height: 18.2px;
+        line-height: 1.1375rem;
+        margin-top: 25px
+    }
+    .nokia-footer-block .footer-menu,
+    .nokia-footer-block .copyright {
+        text-align: left;
+        padding: 0
+    }
+    .nokia-footer-block .copyright,
+    .nokia-footer-block .footer-menu {
+        float: left;
+        margin-top: 5px
+    }
+    .nokia-footer-block .copyright {
+        margin: 5px 20px 0
+    }
+}
+
