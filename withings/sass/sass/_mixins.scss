@@ -1,0 +1,673 @@
+button {
+    min-width: 175px;
+}
+
+button,
+.btn {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    font-family: $nph-light;
+    text-align: center;
+    display: inline-block;
+    background-color: transparent;
+    width: auto;
+    border: 1px solid $white;
+    // padding: 4px 3.1875em 0 3.1875em;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+    color: $white;
+    line-height: 46px;
+    -webkit-appearance: none;
+    @include border-radius(0);
+
+    // &.go-to {
+        // min-width: 225px;
+        // text-align: left;
+
+    &:after {
+        content: "";
+        background-position: 0 -125px;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 0 4px 0;
+        background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-white-1.0.1.svg");
+    }
+    // }
+
+    &:hover {
+        background: $white;
+        color: $blue-black;
+
+        &:after {
+            display: inline-block;
+            vertical-align: middle;
+            content: " ";
+            background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-gray_5-1.0.1.svg")
+        }
+    }
+
+    &.btn--dark {
+        border: 1px solid $blue-black;
+        color: $blue-black;
+
+        &:after {
+            background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-gray_5-1.0.1.svg");
+        }
+
+        &:hover {
+            background: $blue-black;
+            color: $white;
+
+            &:after {
+                background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-white-1.0.1.svg")
+            }
+        }
+    }
+}
+
+// BUTTON COLOR OPTIONS: 
+
+// button.go-to.icon-white:after,
+// .btn.go-to.icon-white:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button.go-to.icon-black:after,
+// .btn.go-to.icon-black:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-black-1.0.1.svg")
+// }
+// button.go-to.icon-blue-black:after,
+// .btn.go-to.icon-blue-black:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-blue_black-1.0.1.svg")
+// }
+// button.go-to.icon-gray-0:after,
+// .btn.go-to.icon-gray-0:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_0-1.0.1.svg")
+// }
+// button.go-to.icon-gray-1:after,
+// .btn.go-to.icon-gray-1:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_1-1.0.1.svg")
+// }
+// button.go-to.icon-gray-2:after,
+// .btn.go-to.icon-gray-2:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_2-1.0.1.svg")
+// }
+// button.go-to.icon-gray-3:after,
+// .btn.go-to.icon-gray-3:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_3-1.0.1.svg")
+// }
+// button.go-to.icon-gray-4:after,
+// .btn.go-to.icon-gray-4:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_4-1.0.1.svg")
+// }
+// button.go-to.icon-gray-5:after,
+// .btn.go-to.icon-gray-5:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_5-1.0.1.svg")
+// }
+// button.go-to.icon-gray2:after,
+// .btn.go-to.icon-gray2:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_2-1.0.1.svg")
+// }
+// button.go-to.icon-light-blue:after,
+// .btn.go-to.icon-light-blue:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-light_blue-1.0.1.svg")
+// }
+// button.go-to.icon-blue:after,
+// .btn.go-to.icon-blue:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-blue-1.0.1.svg")
+// }
+
+
+
+//
+// @media (min-width:1160px) {
+//     button.go-to,
+//     .btn.go-to {
+//         min-width: 225px
+//     }
+// }
+
+// button.go-to:hover,
+// .btn.go-to:hover {
+//     background: #124191;
+//     color: #fff
+// }
+// button.go-to:hover:after,
+// .btn.go-to:hover:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button.go-to:active,
+// button.go-to:focus,
+// button.go-to:focus:active,
+// .btn.go-to:active,
+// .btn.go-to:focus,
+// .btn.go-to:focus:active {
+//     color: #fff;
+//     background-color: #273142;
+//     border: solid 1px #273142;
+//     outline: none
+// }
+// button.go-to:active:after,
+// button.go-to:focus:after,
+// button.go-to:focus:active:after,
+// .btn.go-to:active:after,
+// .btn.go-to:focus:after,
+// .btn.go-to:focus:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+
+
+
+
+
+// button:before,
+// button:after,
+// .btn:before,
+// .btn:after {
+//     margin-top: 8px
+// }
+// button:focus,
+// .btn:focus {
+//     font-size: 16px;
+//     font-size: 1rem;
+//     line-height: 20.8px;
+//     line-height: 1.3rem;
+//     line-height: 46px;
+//     outline-style: solid;
+//     outline-color: #00c9ff;
+//     outline-offset: -2px;
+//     outline-width: 2px
+// }
+// button.gray,
+// .btn.gray {
+//     color: #98a2ae;
+//     background: none;
+//     border: solid 1px #bec8d2;
+//     padding: 4px 20px 0 20px;
+//     margin-bottom: 3px
+// }
+// button.gray:hover,
+// .btn.gray:hover {
+//     color: #fff;
+//     border-color: #124191
+// }
+// button.dialogue,
+// .btn.dialogue {
+//     background: transparent;
+//     border: 1px solid #124191;
+//     text-align: center;
+//     min-width: 175px;
+//     line-height: 48px;
+//     padding-top: 2px
+// }
+
+// button:active,
+// button:focus,
+// button:focus:active,
+// .btn:active,
+// .btn:focus,
+// .btn:focus:active {
+//     color: #fff;
+//     background-color: #273142;
+//     border: solid 1px #273142;
+//     outline: none
+// }
+// button:active:after,
+// button:focus:after,
+// button:focus:active:after,
+// .btn:active:after,
+// .btn:focus:after,
+// .btn:focus:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button:disabled,
+// button.disabled,
+// button:disabled:hover,
+// button.disabled:hover,
+// button:disabled:active,
+// button.disabled:active,
+// .btn:disabled,
+// .btn.disabled,
+// .btn:disabled:hover,
+// .btn.disabled:hover,
+// .btn:disabled:active,
+// .btn.disabled:active {
+//     background-color: #edf3f5;
+//     color: #bec8d2;
+//     border: 0;
+//     line-height: 48px
+// }
+// button:disabled:after,
+// button.disabled:after,
+// button:disabled:hover:after,
+// button.disabled:hover:after,
+// button:disabled:active:after,
+// button.disabled:active:after,
+// .btn:disabled:after,
+// .btn.disabled:after,
+// .btn:disabled:hover:after,
+// .btn.disabled:hover:after,
+// .btn:disabled:active:after,
+// .btn.disabled:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_2-1.0.1.svg")
+// }
+// button.link,
+// .btn.link {
+//     padding: 4px 20px 0 20px;
+//     margin-top: 10px
+// }
+// button.link:after,
+// .btn.link:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-blue-1.0.1.svg")
+// }
+// button.link.white,
+// .btn.link.white {
+//     color: #fff;
+//     background: transparent;
+//     border-color: #fff
+// }
+// button.link.white:after,
+// .btn.link.white:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button.link.white:hover,
+// .btn.link.white:hover {
+//     background: #fff;
+//     color: #001135
+// }
+// button.link.white:hover:after,
+// .btn.link.white:hover:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_5-1.0.1.svg")
+// }
+// button.link.white:active,
+// button.link.white:focus:active,
+// .btn.link.white:active,
+// .btn.link.white:focus:active {
+//     color: #fff;
+//     background-color: #00c9ff;
+//     border: solid 1px #00c9ff;
+//     outline: none
+// }
+// button.link.white:active:after,
+// button.link.white:focus:active:after,
+// .btn.link.white:active:after,
+// .btn.link.white:focus:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button.link.white:disabled,
+// button.link.white.disabled,
+// button.link.white:disabled:active,
+// button.link.white.disabled:active,
+// .btn.link.white:disabled,
+// .btn.link.white.disabled,
+// .btn.link.white:disabled:active,
+// .btn.link.white.disabled:active {
+//     background-color: #4d5766;
+//     color: #273142;
+//     border: 0
+// }
+// button.link.white:disabled:after,
+// button.link.white.disabled:after,
+// button.link.white:disabled:active:after,
+// button.link.white.disabled:active:after,
+// .btn.link.white:disabled:after,
+// .btn.link.white.disabled:after,
+// .btn.link.white:disabled:active:after,
+// .btn.link.white.disabled:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_5-1.0.1.svg")
+// }
+// button.link:after,
+// .btn.link:after {
+//     padding-left: 23px;
+//     float: right
+// }
+// button.link:hover,
+// .btn.link:hover {
+//     background: #124191;
+//     color: #fff
+// }
+// button.link:hover:after,
+// .btn.link:hover:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button.link:active,
+// button.link:focus,
+// button.link:focus:active,
+// .btn.link:active,
+// .btn.link:focus,
+// .btn.link:focus:active {
+//     color: #fff;
+//     background-color: #273142;
+//     border: solid 1px #273142;
+//     outline: none
+// }
+// button.link:active:after,
+// button.link:focus:after,
+// button.link:focus:active:after,
+// .btn.link:active:after,
+// .btn.link:focus:after,
+// .btn.link:focus:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button.link:disabled,
+// button.link.disabled,
+// button.link:disabled:hover,
+// button.link.disabled:hover,
+// button.link:disabled:active,
+// button.link.disabled:active,
+// .btn.link:disabled,
+// .btn.link.disabled,
+// .btn.link:disabled:hover,
+// .btn.link.disabled:hover,
+// .btn.link:disabled:active,
+// .btn.link.disabled:active {
+//     background-color: #edf3f5;
+//     color: #bec8d2;
+//     border: 0;
+//     line-height: 48px
+// }
+// button.link:disabled:after,
+// button.link.disabled:after,
+// button.link:disabled:hover:after,
+// button.link.disabled:hover:after,
+// button.link:disabled:active:after,
+// button.link.disabled:active:after,
+// .btn.link:disabled:after,
+// .btn.link.disabled:after,
+// .btn.link:disabled:hover:after,
+// .btn.link.disabled:hover:after,
+// .btn.link:disabled:active:after,
+// .btn.link.disabled:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_2-1.0.1.svg")
+// }
+// button.more,
+// .btn.more {
+//     margin-top: 3em
+// }
+// button.more:before,
+// .btn.more:before {
+//     float: right
+// }
+// button.load-more,
+// .btn.load-more {
+//     font-family: "nokia-pure-text", Arial, Helvetica, sans-serif;
+//     padding: 4px 20px 0 20px !important;
+//     text-align: left;
+//     min-width: 225px
+// }
+// button.load-more:after,
+// .btn.load-more:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-blue-1.0.1.svg")
+// }
+// button.load-more.icon-white:after,
+// .btn.load-more.icon-white:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button.load-more.icon-black:after,
+// .btn.load-more.icon-black:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-black-1.0.1.svg")
+// }
+// button.load-more.icon-blue-black:after,
+// .btn.load-more.icon-blue-black:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-blue_black-1.0.1.svg")
+// }
+// button.load-more.icon-gray-0:after,
+// .btn.load-more.icon-gray-0:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_0-1.0.1.svg")
+// }
+// button.load-more.icon-gray-1:after,
+// .btn.load-more.icon-gray-1:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_1-1.0.1.svg")
+// }
+// button.load-more.icon-gray-2:after,
+// .btn.load-more.icon-gray-2:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_2-1.0.1.svg")
+// }
+// button.load-more.icon-gray-3:after,
+// .btn.load-more.icon-gray-3:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_3-1.0.1.svg")
+// }
+// button.load-more.icon-gray-4:after,
+// .btn.load-more.icon-gray-4:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_4-1.0.1.svg")
+// }
+// button.load-more.icon-gray-5:after,
+// .btn.load-more.icon-gray-5:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_5-1.0.1.svg")
+// }
+// button.load-more.icon-gray2:after,
+// .btn.load-more.icon-gray2:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_2-1.0.1.svg")
+// }
+// button.load-more.icon-light-blue:after,
+// .btn.load-more.icon-light-blue:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-light_blue-1.0.1.svg")
+// }
+// button.load-more.icon-blue:after,
+// .btn.load-more.icon-blue:after {
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-blue-1.0.1.svg")
+// }
+// @media (min-width:1160px) {
+//     button.load-more,
+//     .btn.load-more {
+//         min-width: 225px
+//     }
+// }
+// button.load-more:after,
+// .btn.load-more:after {
+//     background-position: 0 -1884px;
+//     width: 24px;
+//     height: 24px
+// }
+// button.load-more:hover,
+// .btn.load-more:hover {
+//     background: #124191;
+//     color: #fff
+// }
+// button.load-more:hover:after,
+// .btn.load-more:hover:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button.load-more:active,
+// button.load-more:focus,
+// button.load-more:focus:active,
+// .btn.load-more:active,
+// .btn.load-more:focus,
+// .btn.load-more:focus:active {
+//     color: #fff;
+//     background-color: #273142;
+//     border: solid 1px #273142;
+//     outline: none
+// }
+// button.load-more:active:after,
+// button.load-more:focus:after,
+// button.load-more:focus:active:after,
+// .btn.load-more:active:after,
+// .btn.load-more:focus:after,
+// .btn.load-more:focus:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button.load-more:disabled,
+// button.load-more.disabled,
+// button.load-more:disabled:hover,
+// button.load-more.disabled:hover,
+// button.load-more:disabled:active,
+// button.load-more.disabled:active,
+// .btn.load-more:disabled,
+// .btn.load-more.disabled,
+// .btn.load-more:disabled:hover,
+// .btn.load-more.disabled:hover,
+// .btn.load-more:disabled:active,
+// .btn.load-more.disabled:active {
+//     background-color: #edf3f5;
+//     color: #bec8d2;
+//     border: 0;
+//     line-height: 48px
+// }
+// button.load-more:disabled:after,
+// button.load-more.disabled:after,
+// button.load-more:disabled:hover:after,
+// button.load-more.disabled:hover:after,
+// button.load-more:disabled:active:after,
+// button.load-more.disabled:active:after,
+// .btn.load-more:disabled:after,
+// .btn.load-more.disabled:after,
+// .btn.load-more:disabled:hover:after,
+// .btn.load-more.disabled:hover:after,
+// .btn.load-more:disabled:active:after,
+// .btn.load-more.disabled:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_2-1.0.1.svg")
+// }
+
+// button.go-to:disabled,
+// button.go-to.disabled,
+// button.go-to:disabled:hover,
+// button.go-to.disabled:hover,
+// button.go-to:disabled:active,
+// button.go-to.disabled:active,
+// .btn.go-to:disabled,
+// .btn.go-to.disabled,
+// .btn.go-to:disabled:hover,
+// .btn.go-to.disabled:hover,
+// .btn.go-to:disabled:active,
+// .btn.go-to.disabled:active {
+//     background-color: #edf3f5;
+//     color: #bec8d2;
+//     border: 0;
+//     line-height: 48px
+// }
+// button.go-to:disabled:after,
+// button.go-to.disabled:after,
+// button.go-to:disabled:hover:after,
+// button.go-to.disabled:hover:after,
+// button.go-to:disabled:active:after,
+// button.go-to.disabled:active:after,
+// .btn.go-to:disabled:after,
+// .btn.go-to.disabled:after,
+// .btn.go-to:disabled:hover:after,
+// .btn.go-to.disabled:hover:after,
+// .btn.go-to:disabled:active:after,
+// .btn.go-to.disabled:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_2-1.0.1.svg")
+// }
+// button.bg-dark,
+// .btn.bg-dark {
+//     color: #fff;
+//     background: transparent
+// }
+// button.bg-dark:after,
+// .btn.bg-dark:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button.bg-dark:hover,
+// .btn.bg-dark:hover {
+//     background: #fff;
+//     color: #001135
+// }
+// button.bg-dark:hover:after,
+// .btn.bg-dark:hover:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_5-1.0.1.svg")
+// }
+// button.bg-dark:active,
+// button.bg-dark:focus:active,
+// .btn.bg-dark:active,
+// .btn.bg-dark:focus:active {
+//     color: #fff;
+//     background-color: #00c9ff;
+//     border: solid 1px #00c9ff;
+//     outline: none
+// }
+// button.bg-dark:active:after,
+// button.bg-dark:focus:active:after,
+// .btn.bg-dark:active:after,
+// .btn.bg-dark:focus:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-white-1.0.1.svg")
+// }
+// button.bg-dark:disabled,
+// button.bg-dark.disabled,
+// button.bg-dark:disabled:active,
+// button.bg-dark.disabled:active,
+// .btn.bg-dark:disabled,
+// .btn.bg-dark.disabled,
+// .btn.bg-dark:disabled:active,
+// .btn.bg-dark.disabled:active {
+//     background-color: #4d5766;
+//     color: #273142;
+//     border: 0
+// }
+// button.bg-dark:disabled:after,
+// button.bg-dark.disabled:after,
+// button.bg-dark:disabled:active:after,
+// button.bg-dark.disabled:active:after,
+// .btn.bg-dark:disabled:after,
+// .btn.bg-dark.disabled:after,
+// .btn.bg-dark:disabled:active:after,
+// .btn.bg-dark.disabled:active:after {
+//     display: inline-block;
+//     vertical-align: middle;
+//     content: " ";
+//     background-image: url("/themes/nokia_base/uxg_assets/v1.0.1/icons/icons-gray_5-1.0.1.svg")
+// }

@@ -75,7 +75,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "NokiaPureText-Light";
   src: url(//cdn2.hubspot.net/hubfs/2776717/fonts/NokiaPureText-Light.ttf) format("truetype");
 }
-/* line 16, ../sass/_typography.scss */
+@font-face {
+  font-family: "NokiaPureHeadline_Regular";
+  src: url(https://cdn2.hubspot.net/hubfs/2776717/fonts/NokiaPureHeadline_Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NokiaPureHeadline_Light";
+  src: url(https://cdn2.hubspot.net/hubfs/2776717/fonts/NokiaPureHeadline_Light.ttf) format("truetype");
+}
+/* line 31, ../sass/_typography.scss */
 body {
   font-size: 16px;
   font-size: 1rem;
@@ -87,8 +95,8 @@ body {
   color: #273142;
 }
 @media (min-width: 800px) {
-  /* line 27, ../sass/_typography.scss */
-  body body {
+  /* line 31, ../sass/_typography.scss */
+  body {
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 32px;
@@ -96,7 +104,7 @@ body {
   }
 }
 
-/* line 36, ../sass/_typography.scss */
+/* line 49, ../sass/_typography.scss */
 h1,
 h2,
 h3,
@@ -109,7 +117,7 @@ h6 {
   color: #124191;
 }
 
-/* line 48, ../sass/_typography.scss */
+/* line 61, ../sass/_typography.scss */
 h1 {
   font-size: 42px;
   font-size: 2.625rem;
@@ -117,8 +125,8 @@ h1 {
   line-height: 3.25rem;
 }
 @media (min-width: 600px) {
-  /* line 55, ../sass/_typography.scss */
-  h1 h1 {
+  /* line 61, ../sass/_typography.scss */
+  h1 {
     font-size: 52px;
     font-size: 3.25rem;
     line-height: 62px;
@@ -126,8 +134,8 @@ h1 {
   }
 }
 @media (min-width: 800px) {
-  /* line 64, ../sass/_typography.scss */
-  h1 h1 {
+  /* line 61, ../sass/_typography.scss */
+  h1 {
     font-size: 64px;
     font-size: 4rem;
     line-height: 74px;
@@ -135,7 +143,7 @@ h1 {
   }
 }
 
-/* line 73, ../sass/_typography.scss */
+/* line 82, ../sass/_typography.scss */
 h2 {
   font-size: 32px;
   font-size: 2rem;
@@ -143,8 +151,8 @@ h2 {
   line-height: 2.75rem;
 }
 @media (min-width: 600px) {
-  /* line 80, ../sass/_typography.scss */
-  h2 h2 {
+  /* line 82, ../sass/_typography.scss */
+  h2 {
     font-size: 36px;
     font-size: 2.25rem;
     line-height: 47px;
@@ -152,8 +160,8 @@ h2 {
   }
 }
 @media (min-width: 800px) {
-  /* line 89, ../sass/_typography.scss */
-  h2 h2 {
+  /* line 82, ../sass/_typography.scss */
+  h2 {
     font-size: 48px;
     font-size: 3rem;
     line-height: 60px;
@@ -161,7 +169,7 @@ h2 {
   }
 }
 
-/* line 98, ../sass/_typography.scss */
+/* line 103, ../sass/_typography.scss */
 h3 {
   font-size: 28px;
   font-size: 1.75rem;
@@ -169,8 +177,8 @@ h3 {
   line-height: 2.375rem;
 }
 @media (min-width: 800px) {
-  /* line 105, ../sass/_typography.scss */
-  h3 h3 {
+  /* line 103, ../sass/_typography.scss */
+  h3 {
     font-size: 36px;
     font-size: 2.25rem;
     line-height: 48px;
@@ -178,7 +186,7 @@ h3 {
   }
 }
 
-/* line 114, ../sass/_typography.scss */
+/* line 117, ../sass/_typography.scss */
 h4 {
   font-size: 22px;
   font-size: 1.375rem;
@@ -188,8 +196,8 @@ h4 {
   color: #4d5766;
 }
 @media (min-width: 1160px) {
-  /* line 123, ../sass/_typography.scss */
-  h4 h4 {
+  /* line 117, ../sass/_typography.scss */
+  h4 {
     font-size: 26px;
     font-size: 1.625rem;
     line-height: 38px;
@@ -197,7 +205,7 @@ h4 {
   }
 }
 
-/* line 132, ../sass/_typography.scss */
+/* line 133, ../sass/_typography.scss */
 h5 {
   font-size: 16px;
   font-size: 1rem;
@@ -206,8 +214,8 @@ h5 {
   font-family: "NokiaPureText-Light", Arial, Helvetica, sans-serif;
 }
 @media (min-width: 1160px) {
-  /* line 140, ../sass/_typography.scss */
-  h5 h5 {
+  /* line 133, ../sass/_typography.scss */
+  h5 {
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 28px;
@@ -215,7 +223,7 @@ h5 {
   }
 }
 
-/* line 149, ../sass/_typography.scss */
+/* line 148, ../sass/_typography.scss */
 h6 {
   font-size: 16px;
   font-size: 1rem;
@@ -225,12 +233,12 @@ h6 {
   color: #4d5766;
 }
 
-/* line 158, ../sass/_typography.scss */
+/* line 157, ../sass/_typography.scss */
 .form-errors {
   color: #FF3154;
 }
 
-/* line 162, ../sass/_typography.scss */
+/* line 161, ../sass/_typography.scss */
 .super {
   font-size: 120px;
   font-size: 7.5rem;
@@ -242,7 +250,7 @@ h6 {
   color: #124191;
 }
 @media (min-width: 800px) {
-  /* line 173, ../sass/_typography.scss */
+  /* line 172, ../sass/_typography.scss */
   .super .super {
     font-size: 250px;
     font-size: 15.625rem;
@@ -251,7 +259,7 @@ h6 {
   }
 }
 @media (min-width: 1160px) {
-  /* line 181, ../sass/_typography.scss */
+  /* line 180, ../sass/_typography.scss */
   .super .super {
     font-size: 323px;
     font-size: 20.1875rem;
@@ -260,7 +268,7 @@ h6 {
   }
 }
 
-/* line 190, ../sass/_typography.scss */
+/* line 189, ../sass/_typography.scss */
 .xxl-size {
   font-size: 120px;
   font-size: 7.5rem;
@@ -272,7 +280,7 @@ h6 {
   color: #124191;
 }
 @media (min-width: 1160px) {
-  /* line 201, ../sass/_typography.scss */
+  /* line 200, ../sass/_typography.scss */
   .xxl-size .xxl-size {
     font-size: 140px;
     font-size: 8.75rem;
@@ -281,28 +289,51 @@ h6 {
   }
 }
 
-/* line 210, ../sass/_typography.scss */
+/* line 209, ../sass/_typography.scss */
 .xl-size {
-  font-size: 60px;
-  font-size: 3.75rem;
-  line-height: 80px;
-  line-height: 5rem;
-  font-family: "NokiaPureText-Light", Arial, Helvetica, sans-serif;
-  margin: 0.2em 0;
-  font-weight: normal;
-  color: #124191;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 44px;
+  line-height: 2.75rem;
+}
+@media (min-width: 600px) {
+  /* line 209, ../sass/_typography.scss */
+  .xl-size {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 47px;
+    line-height: 2.9375rem;
+  }
 }
 @media (min-width: 800px) {
-  /* line 221, ../sass/_typography.scss */
-  .xl-size .xl-size {
-    font-size: 80px;
-    font-size: 5rem;
-    line-height: 80px;
-    line-height: 5rem;
+  /* line 209, ../sass/_typography.scss */
+  .xl-size {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 60px;
+    line-height: 3.75rem;
   }
 }
 
 /* line 230, ../sass/_typography.scss */
+.ll-size {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 46px;
+  line-height: 2.875rem;
+  font-family: "NokiaPureText-Light", Arial, Helvetica, sans-serif;
+}
+@media (max-width: 1160px) {
+  /* line 230, ../sass/_typography.scss */
+  .ll-size {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 32px;
+    line-height: 2rem;
+  }
+}
+
+/* line 257, ../sass/_typography.scss */
 .l-size {
   font-size: 22px;
   font-size: 1.375rem;
@@ -311,8 +342,8 @@ h6 {
   font-family: "NokiaPureText-Light", Arial, Helvetica, sans-serif;
 }
 @media (min-width: 800px) {
-  /* line 238, ../sass/_typography.scss */
-  .l-size .l-size {
+  /* line 257, ../sass/_typography.scss */
+  .l-size {
     font-size: 36px;
     font-size: 2.25rem;
     line-height: 46px;
@@ -320,7 +351,7 @@ h6 {
   }
 }
 
-/* line 247, ../sass/_typography.scss */
+/* line 272, ../sass/_typography.scss */
 .m-size {
   font-size: 16px;
   font-size: 1rem;
@@ -328,8 +359,8 @@ h6 {
   line-height: 2rem;
 }
 @media (min-width: 800px) {
-  /* line 254, ../sass/_typography.scss */
-  .m-size .m-size {
+  /* line 272, ../sass/_typography.scss */
+  .m-size {
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 32px;
@@ -337,7 +368,7 @@ h6 {
   }
 }
 
-/* line 263, ../sass/_typography.scss */
+/* line 286, ../sass/_typography.scss */
 .xs-size {
   font-size: 10px;
   font-size: .625rem;
@@ -345,7 +376,7 @@ h6 {
   line-height: 1.625rem;
 }
 
-/* line 270, ../sass/_typography.scss */
+/* line 293, ../sass/_typography.scss */
 .ingress,
 .large {
   font-size: 18px;
@@ -355,11 +386,9 @@ h6 {
   font-family: "NokiaPureText-Light", Arial, Helvetica, sans-serif;
 }
 @media (min-width: 800px) {
-  /* line 279, ../sass/_typography.scss */
-  .ingress .ingress,
-  .ingress .large,
-  .large .ingress,
-  .large .large {
+  /* line 293, ../sass/_typography.scss */
+  .ingress,
+  .large {
     font-size: 22px;
     font-size: 1.375rem;
     line-height: 36px;
@@ -367,7 +396,7 @@ h6 {
   }
 }
 
-/* line 289, ../sass/_typography.scss */
+/* line 309, ../sass/_typography.scss */
 .small {
   font-size: 12px;
   font-size: .75rem;
@@ -377,7 +406,7 @@ h6 {
   font-family-margin: 0.2em 0;
 }
 @media (min-width: 800px) {
-  /* line 301, ../sass/_typography.scss */
+  /* line 321, ../sass/_typography.scss */
   .small .small {
     font-size: 14px;
     font-size: .875rem;
@@ -386,7 +415,7 @@ h6 {
   }
 }
 
-/* line 310, ../sass/_typography.scss */
+/* line 330, ../sass/_typography.scss */
 .label,
 .date {
   font-family: "NokiaPureText-Light", Arial, Helvetica, sans-serif;
@@ -397,17 +426,22 @@ h6 {
   color: #4d5766;
 }
 
-/* line 320, ../sass/_typography.scss */
+/* line 340, ../sass/_typography.scss */
+.label {
+  margin: 1em 0;
+}
+
+/* line 344, ../sass/_typography.scss */
 .date {
   color: #98a2ae;
 }
 
-/* line 324, ../sass/_typography.scss */
+/* line 348, ../sass/_typography.scss */
 .timestamp {
   font-family: "NokiaPureText-Regular", Arial, Helvetica, sans-serif;
 }
 
-/* line 328, ../sass/_typography.scss */
+/* line 352, ../sass/_typography.scss */
 .caption {
   font-size: 12px;
   font-size: .75rem;
@@ -416,52 +450,133 @@ h6 {
   color: #4d5766;
 }
 
-/* line 336, ../sass/_typography.scss */
+/* line 360, ../sass/_typography.scss */
 a {
   text-decoration: none;
   color: #124191;
 }
-/* line 340, ../sass/_typography.scss */
+/* line 364, ../sass/_typography.scss */
 a.action {
   font-family: "NokiaPureText-Regular", Arial, Helvetica, sans-serif;
 }
-/* line 344, ../sass/_typography.scss */
+/* line 368, ../sass/_typography.scss */
 a:hover {
   color: #bec8d2;
 }
-/* line 348, ../sass/_typography.scss */
+/* line 372, ../sass/_typography.scss */
 a:active {
   color: #00c9ff;
 }
 
-/* line 353, ../sass/_typography.scss */
+/* line 377, ../sass/_typography.scss */
 .body a {
   font-family: "NokiaPureText-Regular", Arial, Helvetica, sans-serif;
 }
 
-/* line 357, ../sass/_typography.scss */
+/* line 381, ../sass/_typography.scss */
 .body .bg-dark a,
 .body .bg-gray-5 a {
   color: #bec8d2;
 }
 
-/* line 362, ../sass/_typography.scss */
+/* line 386, ../sass/_typography.scss */
 .body .bg-dark a:hover,
 .body .bg-gray-5 a:hover {
   color: #fff;
 }
 
-/* line 367, ../sass/_typography.scss */
+/* line 391, ../sass/_typography.scss */
 .body .bg-dark a:active,
 .body .bg-gray-5 a:active {
   color: #00c9ff;
 }
 
-/* line 372, ../sass/_typography.scss */
+/* line 396, ../sass/_typography.scss */
 b,
 strong {
   font-family: "NokiaPureText-Regular", Arial, Helvetica, sans-serif;
   font-weight: normal;
+}
+
+/* line 402, ../sass/_typography.scss */
+p {
+  margin: 1em 0;
+}
+
+/* line 1, ../sass/_mixins.scss */
+button {
+  min-width: 175px;
+}
+
+/* line 5, ../sass/_mixins.scss */
+button,
+.btn {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-family: "NokiaPureHeadline_Light", Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: inline-block;
+  background-color: transparent;
+  width: auto;
+  border: 1px solid #fff;
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+  color: #fff;
+  line-height: 46px;
+  -webkit-appearance: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/* line 29, ../sass/_mixins.scss */
+button:after,
+.btn:after {
+  content: "";
+  background-position: 0 -125px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 4px 0;
+  background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-white-1.0.1.svg");
+}
+/* line 41, ../sass/_mixins.scss */
+button:hover,
+.btn:hover {
+  background: #fff;
+  color: #001135;
+}
+/* line 45, ../sass/_mixins.scss */
+button:hover:after,
+.btn:hover:after {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-gray_5-1.0.1.svg");
+}
+/* line 53, ../sass/_mixins.scss */
+button.btn--dark,
+.btn.btn--dark {
+  border: 1px solid #001135;
+  color: #001135;
+}
+/* line 57, ../sass/_mixins.scss */
+button.btn--dark:after,
+.btn.btn--dark:after {
+  background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-gray_5-1.0.1.svg");
+}
+/* line 61, ../sass/_mixins.scss */
+button.btn--dark:hover,
+.btn.btn--dark:hover {
+  background: #001135;
+  color: #fff;
+}
+/* line 65, ../sass/_mixins.scss */
+button.btn--dark:hover:after,
+.btn.btn--dark:hover:after {
+  background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-white-1.0.1.svg");
 }
 
 /* line 2, ../sass/_utility.scss */
@@ -591,4 +706,527 @@ strong {
 .color-gray-5,
 .uxg-b2c .color-gray-5 {
   color: #273142;
+}
+
+/* line 92, ../sass/_utility.scss */
+body .grid-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 0 22px 20px 22px;
+}
+
+/* line 104, ../sass/_utility.scss */
+body .grid-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media (min-width: 600px) {
+  /* line 114, ../sass/_utility.scss */
+  body .grid-container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media (min-width: 800px) {
+  /* line 124, ../sass/_utility.scss */
+  body .grid-container {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+@media (min-width: 1160px) {
+  /* line 134, ../sass/_utility.scss */
+  body .grid-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+/* line 3, ../sass/_footer.scss */
+.global-footer {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+@media (min-width: 800px) {
+  /* line 3, ../sass/_footer.scss */
+  .global-footer {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 12, ../sass/_footer.scss */
+.global-footer h6 {
+  font-family: "NokiaPureHeadline_Light", Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #bec8d2;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  text-align: left;
+}
+@media (min-width: 800px) {
+  /* line 12, ../sass/_footer.scss */
+  .global-footer h6 {
+    border-bottom: none;
+  }
+}
+
+/* line 24, ../sass/_footer.scss */
+.global-footer ul,
+.global-footer li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+/* line 32, ../sass/_footer.scss */
+.global-footer ul {
+  display: none;
+}
+@media (min-width: 800px) {
+  /* line 32, ../sass/_footer.scss */
+  .global-footer ul {
+    display: block;
+  }
+}
+
+/* line 39, ../sass/_footer.scss */
+.global-footer .some {
+  margin-top: 27px;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  /* line 39, ../sass/_footer.scss */
+  .global-footer .some {
+    margin-top: 9px;
+    text-align: right;
+  }
+}
+
+/* line 49, ../sass/_footer.scss */
+.global-footer .some a {
+  margin-left: 8px;
+}
+/* line 52, ../sass/_footer.scss */
+.global-footer .some a:first-child {
+  margin-left: 0;
+}
+
+/* line 57, ../sass/_footer.scss */
+.nokia-footer-block {
+  font-size: 12px;
+  font-size: .75rem;
+  line-height: 15.6px;
+  line-height: .975rem;
+  color: #4d5766;
+}
+/* line 64, ../sass/_footer.scss */
+.nokia-footer-block a {
+  color: #4d5766;
+}
+/* line 67, ../sass/_footer.scss */
+.nokia-footer-block a.language-link {
+  padding: 25px 0;
+  text-align: center;
+  color: #124191;
+}
+/* line 72, ../sass/_footer.scss */
+.nokia-footer-block a.language-link:before {
+  margin-right: 10px;
+}
+@media (min-width: 800px) {
+  /* line 67, ../sass/_footer.scss */
+  .nokia-footer-block a.language-link {
+    text-align: right;
+    padding: 4px 0;
+  }
+}
+
+/* line 84, ../sass/_footer.scss */
+.nokia-footer-block .copyright,
+.nokia-footer-block .footer-menu {
+  text-align: center;
+  padding-top: .85em;
+}
+
+/* line 90, ../sass/_footer.scss */
+.nokia-footer-block ul.menu {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+/* line 94, ../sass/_footer.scss */
+.nokia-footer-block ul.menu li {
+  display: inline;
+  margin: 0 20px;
+  padding: 0;
+}
+/* line 99, ../sass/_footer.scss */
+.nokia-footer-block ul.menu li a:hover {
+  color: #124191;
+}
+
+@media (min-width: 800px) {
+  /* line 106, ../sass/_footer.scss */
+  .nokia-footer-block {
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 18.2px;
+    line-height: 1.1375rem;
+    margin-top: 25px;
+  }
+
+  /* line 114, ../sass/_footer.scss */
+  .nokia-footer-block .footer-menu,
+  .nokia-footer-block .copyright {
+    text-align: left;
+    padding: 0;
+  }
+
+  /* line 120, ../sass/_footer.scss */
+  .nokia-footer-block .copyright,
+  .nokia-footer-block .footer-menu {
+    float: left;
+    margin-top: 5px;
+  }
+
+  /* line 126, ../sass/_footer.scss */
+  .nokia-footer-block .copyright {
+    margin: 5px 20px 0;
+  }
+}
+/* line 1, ../sass/_hero.scss */
+.hero__wrap {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 430px;
+}
+/* line 7, ../sass/_hero.scss */
+.hero__wrap .btn {
+  margin: 20px 0 0 0;
+}
+
+/* line 12, ../sass/_hero.scss */
+.hero__text {
+  padding: 60px 0;
+}
+/* line 15, ../sass/_hero.scss */
+.hero__text.hero__text--standard {
+  max-width: 650px;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+/* line 19, ../sass/_hero.scss */
+.hero__text.hero__text--large {
+  -webkit-flex-grow: 3;
+  flex-grow: 3;
+}
+/* line 22, ../sass/_hero.scss */
+.hero__text.hero__text--full {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+@media (max-width: 767px) {
+  /* line 12, ../sass/_hero.scss */
+  .hero__text {
+    padding-top: 30px;
+  }
+}
+
+/* line 35, ../sass/_hero.scss */
+.hero__subhead {
+  margin: 30px 0;
+}
+
+/* line 40, ../sass/_hero.scss */
+.hero__desc ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* line 47, ../sass/_hero.scss */
+.hero__inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 52, ../sass/_hero.scss */
+.hero__inner.hero__inner--text-right {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+/* line 56, ../sass/_hero.scss */
+.hero__inner.hero__inner--text-left.hero__inner--with-img {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+/* line 58, ../sass/_hero.scss */
+.hero__inner.hero__inner--text-left.hero__inner--with-img .hero__img {
+  padding-left: 40px;
+}
+/* line 61, ../sass/_hero.scss */
+.hero__inner.hero__inner--text-left.hero__inner--with-img .hero__text {
+  padding-right: 40px;
+}
+/* line 66, ../sass/_hero.scss */
+.hero__inner.hero__inner--text-right.hero__inner--with-img {
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+/* line 68, ../sass/_hero.scss */
+.hero__inner.hero__inner--text-right.hero__inner--with-img .hero__img {
+  padding-right: 40px;
+}
+/* line 71, ../sass/_hero.scss */
+.hero__inner.hero__inner--text-right.hero__inner--with-img .hero__text {
+  padding-left: 40px;
+}
+@media (max-width: 767px) {
+  /* line 77, ../sass/_hero.scss */
+  .hero__inner, .hero__inner.hero__inner--text-left.hero__inner--with-img, .hero__inner.hero__inner--text-right.hero__inner--with-img {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 81, ../sass/_hero.scss */
+  .hero__inner .hero__text,
+  .hero__inner .hero__img, .hero__inner.hero__inner--text-left.hero__inner--with-img .hero__text,
+  .hero__inner.hero__inner--text-left.hero__inner--with-img .hero__img, .hero__inner.hero__inner--text-right.hero__inner--with-img .hero__text,
+  .hero__inner.hero__inner--text-right.hero__inner--with-img .hero__img {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* line 91, ../sass/_hero.scss */
+.hero__img {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  padding: 60px 0;
+}
+/* line 95, ../sass/_hero.scss */
+.hero__img img {
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  /* line 91, ../sass/_hero.scss */
+  .hero__img {
+    padding-bottom: 0;
+  }
+}
+
+/* line 105, ../sass/_hero.scss */
+.hero__img,
+.hero__text {
+  -webkit-flex-basis: 0;
+  flex-basis: 0;
+}
+
+/* line 110, ../sass/_hero.scss */
+.hero__quote {
+  margin: 1em 0;
+}
+/* line 113, ../sass/_hero.scss */
+.hero__quote * {
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.7;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1, ../sass/_cta-blocks.scss */
+.blog__body {
+  padding: 80px 0 40px 0;
+}
+
+/* line 5, ../sass/_cta-blocks.scss */
+.blog__topics-nav {
+  font-size: 40px;
+  line-height: 1;
+  font-family: "NokiaPureText-Light", Arial, Helvetica, sans-serif;
+  margin: 0 11px;
+}
+@media (max-width: 1160px) {
+  /* line 5, ../sass/_cta-blocks.scss */
+  .blog__topics-nav {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 38px;
+    line-height: 2.375rem;
+  }
+}
+/* line 18, ../sass/_cta-blocks.scss */
+.blog__topics-nav ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+@media (max-width: 767px) {
+  /* line 18, ../sass/_cta-blocks.scss */
+  .blog__topics-nav ul {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/* line 28, ../sass/_cta-blocks.scss */
+.blog__topics-nav li:first-child a {
+  padding-left: 0;
+}
+/* line 32, ../sass/_cta-blocks.scss */
+.blog__topics-nav li:last-child a {
+  padding-right: 0;
+}
+/* line 37, ../sass/_cta-blocks.scss */
+.blog__topics-nav a {
+  padding: 0 24px;
+}
+@media (max-width: 767px) {
+  /* line 37, ../sass/_cta-blocks.scss */
+  .blog__topics-nav a {
+    padding: 5px 0;
+  }
+}
+
+/* line 46, ../sass/_cta-blocks.scss */
+.typ-card__container,
+.blog-card__container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  padding: 20px 0;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+@media (max-width: 767px) {
+  /* line 46, ../sass/_cta-blocks.scss */
+  .typ-card__container,
+  .blog-card__container {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/* line 59, ../sass/_cta-blocks.scss */
+.blog-card__wrap,
+.typ-card__wrap {
+  margin: 40px 0;
+  width: 33.3%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  position: relative;
+  max-width: 33.3%;
+  display: flex;
+}
+@media (max-width: 767px) {
+  /* line 59, ../sass/_cta-blocks.scss */
+  .blog-card__wrap,
+  .typ-card__wrap {
+    width: 100%;
+    max-width: none;
+    margin: 20px 0;
+  }
+}
+
+/* line 75, ../sass/_cta-blocks.scss */
+.typ-card,
+.blog-card {
+  text-decoration: none;
+  padding: 0 0 63px 0;
+  background: #f4f4f4;
+  margin: 0 11px;
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  /* line 75, ../sass/_cta-blocks.scss */
+  .typ-card,
+  .blog-card {
+    margin: 0 0;
+    width: 100%;
+  }
+}
+/* line 89, ../sass/_cta-blocks.scss */
+.typ-card.blog-card--cta,
+.blog-card.blog-card--cta {
+  background: #124191;
+}
+/* line 92, ../sass/_cta-blocks.scss */
+.typ-card.blog-card--cta *,
+.blog-card.blog-card--cta * {
+  color: #fff;
+}
+/* line 96, ../sass/_cta-blocks.scss */
+.typ-card.blog-card--cta:hover,
+.blog-card.blog-card--cta:hover {
+  background: #fff;
+  border: 2px solid #124191;
+}
+/* line 100, ../sass/_cta-blocks.scss */
+.typ-card.blog-card--cta:hover *,
+.blog-card.blog-card--cta:hover * {
+  color: #124191;
+}
+
+/* line 108, ../sass/_cta-blocks.scss */
+.typ-card__photo,
+.blog-card__photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 210px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  /* line 108, ../sass/_cta-blocks.scss */
+  .typ-card__photo,
+  .blog-card__photo {
+    height: 150px;
+  }
+}
+
+/* line 122, ../sass/_cta-blocks.scss */
+.typ-card__content,
+.blog-card__content {
+  margin: 38px 0 0 0;
+  padding: 0 32px;
+  display: inline-block;
+}
+
+/* line 129, ../sass/_cta-blocks.scss */
+.arrow-link.icon-gray-2 {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  background: none;
+  overflow: visible;
+  height: 42px;
+  width: 42px;
+  padding: 0;
+}
+/* line 139, ../sass/_cta-blocks.scss */
+.arrow-link.icon-gray-2:before {
+  content: "";
+  background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-gray_2-1.0.1.svg");
+  background-position: 0 -48px;
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  margin-top: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 152, ../sass/_cta-blocks.scss */
+.arrow-link.icon-gray-2:hover:before {
+  background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-blue-1.0.1.svg");
 }

@@ -7,9 +7,13 @@
 // @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import "compass/reset";
 @import "variables";
-@import "mixins";
 @import "typography";
+@import "mixins";
 // @import "form";
 @import "utility";
 
 
+@import "footer";
+@import "header";
+@import "hero";
+@import "cta-blocks";
