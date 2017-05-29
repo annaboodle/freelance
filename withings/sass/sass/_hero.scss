@@ -1,8 +1,34 @@
 .hero__wrap {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-    min-height: 430px;
+
+	&.hero__wrap--bg {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	    min-height: 430px;
+	}
+
+	&.hero__wrap--tall {
+		height: 800px;
+		background-position: center bottom;
+
+		.hero__head {
+			color: $nokia-blue;
+		}
+
+		.hero__subhead, 
+		.hero__desc {
+			color: $gray-5;
+		}
+	}
+
+	&.hero__wrap--short {
+		.hero__text {
+			padding-bottom: 0;
+		}
+		.hero__subhead {
+		    margin-bottom: 20px;
+		}
+	}
 
     .btn {
 		margin: 20px 0 0 0;
@@ -17,6 +43,7 @@
 		@include flex-grow(1);
 	}
 	&.hero__text--large {
+		max-width: 900px;
 		@include flex-grow(3);
 	}
 	&.hero__text--full {
@@ -29,7 +56,7 @@
 }
 
 .hero__head {
-	
+
 }
 
 .hero__subhead {
@@ -41,6 +68,9 @@
 		display: block;
 		list-style-type: disc;
 		padding-left: 20px;
+	}
+	li {
+		padding: 5px 0;
 	}
 }
 

@@ -1,4 +1,4 @@
-<div class="hero__wrap" {% if widget.show_background_image %}style="background-image: url('{{ widget.background_image.src }}')"{% endif %}>
+<div class="hero__wrap {% if widget.background_image.src %}hero__wrap--bg{% endif %} {{ widget.special_formatting }}" {% if widget.background_image.src %}style="background-image: url('{{ widget.background_image.src }}')"{% endif %}>
 
     <div class="grid-container">
 
@@ -13,29 +13,29 @@
             <div class="hero__text {% if widget.text_width|lower =='full' %}hero__text--full{% elif widget.text_width|lower =='large' %}hero__text--large{% else %}hero__text--standard{% endif %}">
 
                 {% if widget.header %}
-                <{{ widget.title_text }} class="hero__head {% if widget.show_background_image %}color-white{% else %}color-nokia-blue{% endif %}">
+                <{{ widget.title_text }} class="hero__head {% if widget.background_image.src %}color-white{% else %}color-nokia-blue{% endif %}">
                     {{ widget.header }}
                 </{{ widget.title_text }}>
                 {% endif %}
 
                 {% if widget.subheader %}
-                <p class="hero__subhead l-size {% if widget.show_background_image %}color-white{% else %}color-gray-5{% endif %}">{{ widget.subheader }}</p> 
+                <p class="hero__subhead l-size {% if widget.background_image.src %}color-white{% else %}color-gray-5{% endif %}">{{ widget.subheader }}</p> 
                 {% endif %}
 
                 {% if widget.description %}
-                <div class="hero__desc {% if widget.show_background_image %}color-white{% else %}color-gray-5{% endif %}">
+                <div class="hero__desc {% if widget.background_image.src %}color-white{% else %}color-gray-5{% endif %}">
                     {{ widget.description }}
                 </div>
                 {% endif %}
 
                 {% if widget.quote %}
-                <div class="hero__quote {% if widget.show_background_image %}color-white{% else %}color-gray-5{% endif %}">
+                <div class="hero__quote {% if widget.background_image.src %}color-white{% else %}color-gray-5{% endif %}">
                     {{ widget.quote }}
                 </div>
                 {% endif %}
 
                 {% if widget.cta_copy %}
-                <a class="btn {% if not widget.show_background_image %}btn--dark{% endif %}" href="{{ widget.cta_url }}" target="_blank" rel="nofollow">
+                <a class="btn {% if not widget.background_image.src %}btn--dark{% endif %}" href="{{ widget.cta_url }}" target="_blank" rel="nofollow">
                     {{ widget.cta_copy }}
                     <span class="0"><span class="element-invisible"> </span></span>
                 </a>
