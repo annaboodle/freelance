@@ -3,4 +3,215 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+    padding: 50px 0;
+
+	form.hs-form input,
+	form.hs-form textarea,
+	form.hs-form select,
+	form.hs-form input[type="submit"] {
+	    border: 1px solid $white;
+	    color: $white;
+	}
+
+	form.hs-form input[type="submit"] {
+		&:hover {
+			background: $white;
+			color: $blue-black;
+		}
+	}
+
+	form.hs-form input:focus,
+	form.hs-form textarea:focus,
+	form.hs-form select:focus {
+	    border: 1px solid $white;
+	}
+
+	form.hs-form .hs-form-field label,
+	h3.form-title {
+	    color: $white;
+	}
+
+	form.hs-form .hs-form-required {
+		display: none;
+	}
+
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		color: $white;
+	}
+
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		color: $white;
+		opacity:  1;
+	}
+
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color: $white;
+		opacity:  1;
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: $white;
+	}
+
+	::-ms-input-placeholder { /* Microsoft Edge */
+		color: $white;
+	}
+
+}
+
+h3.form-title {
+	font-size: 64px; 
+	font-family: $nph-light;
+	margin: 20px 0 40px 0;
+}
+
+fieldset.form-columns-3 .input,
+fieldset.form-columns-2 .input,
+fieldset.form-columns-1 .input,
+form.hs-form .hs_submit {
+    margin-right: 30px !important; // space between fields
+}
+
+fieldset.form-columns-3 .hs-form-field {
+    width: 33.3% !important; // fix three-column layout
+
+    @media (max-width: $break-mob) {
+    	width: 100% !important;
+    }
+}
+
+form.hs-form .hs-form-required { // asterick for required fields
+    color: $red;
+    padding-left: 3px;
+}
+
+form.hs-form input,
+form.hs-form textarea,
+form.hs-form select,
+form.hs-form input[type="submit"] {
+    padding: 15px;
+    background: transparent;
+    @include transition(.2s);
+    border: 1px solid $gray-5;
+    width: 100%;
+    box-sizing: border-box;
+
+    font-family: $npt-light;
+    font-size: 20px;
+}
+
+form.hs-form input[type="submit"] {
+	padding: 8px;
+}
+
+form.hs-form input[type="radio"],
+form.hs-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 20px;
+}
+
+form.hs-form input,
+form.hs-form textarea,
+form.hs-form select,
+.hs-form-radio-display span,
+.hs-form-checkbox-display span,
+.hs-form-booleancheckbox-display span {
+    font-size: 20px;
+}
+
+form.hs-form input:focus,
+form.hs-form textarea:focus,
+form.hs-form select:focus {
+    outline: none;
+    border: 1px solid $black;
+}
+
+form.hs-form select {
+    @include appearance(none);
+
+	&:focus {
+	    outline: none;
+	}
+}
+
+form.hs-form .hs-form-field label {
+    padding-bottom: 2px;
+    display: block;
+
+    &.hs-form-radio-display,
+    &.hs-form-checkbox-display {
+	    padding-bottom: 0;
+	}
+}
+
+form.hs-form .hs_submit {
+    text-align: center;
+
+	.actions {
+	    display: inline-block;
+	    width: 100%;
+	}
+	input {
+	    margin-top: 15px; 
+	}
+}
+
+form.hs-form .hs-form-field {
+    padding: 10px 0;
+}
+
+form.hs-form fieldset, 
+form.hs-form {
+    max-width: 780px;
+}
+
+form.hs-form fieldset {
+	&:first-child {
+	    padding-top: 0;
+	}
+
+	&:last-child {
+	    padding-bottom: 0;
+	}
+
+	&.form-columns-1 .hs-input {
+	    width: 100%;
+	}
+}
+
+form.hs-form .hs-error-msgs {
+	&.inputs-list {
+	    margin: 0 0;
+	    color: $red;
+	    list-style-type: none;
+	    padding: 5px 0 0 0;
+
+		li {
+		    margin: 0 0;
+		}
+
+		label {
+		    font-size: 14px;
+		    padding: 0 0;
+		    color: $white;
+		}
+	}
+	* {
+		color: $red;
+	}
+}
+
+@media (max-width: 400px),
+(max-device-width: 480px) and (min-device-width: 320px) {
+    form.hs-form fieldset.form-columns-2 .hs-form-field .hs-input,
+    form.hs-form fieldset.form-columns-3 .hs-form-field .hs-input {
+        width: 100%;
+    }
+
+	fieldset.form-columns-3 .input,
+	fieldset.form-columns-2 .input,
+	fieldset.form-columns-1 .input,
+	form.hs-form .hs_submit {
+	    margin-right: 0 !important; // space between fields
+	}
 }

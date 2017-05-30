@@ -1,0 +1,56 @@
+.stats {
+	padding: 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.stats__inner {
+	@include display-flex;
+	padding: 20px 0 70px 0;
+
+	@media (max-width: $break-mob) {
+	    @include flex-direction(column);
+    	padding: 20px 0 20px 0;
+	}
+}
+
+.stats__block {
+	padding: 30px;
+
+	&:first-child {
+		padding-left: 0;
+	}
+	&:last-child {
+		padding-right: 0;
+	}
+
+	@media (max-width: $break-mob) {
+		&,
+		&:first-child,
+		&:last-child {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+}
+
+.stats__num {
+	font-size: 60px;
+	font-family: $nph-light;
+    line-height: 1;
+    margin: 0 0;
+}
+
+.stats__desc,
+.stats__attr {
+	font-size: 24px;
+}
+
+.stats__desc {
+	margin: 15px 0 10px;
+}
+
+.stats__attr {
+	margin: 0 0;
+}

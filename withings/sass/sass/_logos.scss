@@ -1,0 +1,41 @@
+.logos {
+    padding: 20px 0;
+}
+
+.logos__inner {
+	@include display-flex;
+    padding: 0px 0;
+    @include align-items(center);
+    @include justify-content(space-between);
+
+	@media (max-width: $break-mob) {
+	    @include flex-direction(column);
+		justify-content: center;
+		align-items: left;
+	}	
+}
+
+.logos__block {
+	padding: 20px;
+
+	&:first-child {
+		padding-left: 0;
+	}
+	&:last-child {
+		padding-right: 0;
+	}
+
+	@media (max-width: $break-mob) {
+		&,
+		&:first-child,
+		&:last-child {
+			padding-right: 0;
+			padding-left: 0;
+			max-width: 200px;
+		}
+	}
+}
+
+.logos__img {
+	width: 100%;	
+}

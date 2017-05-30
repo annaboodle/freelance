@@ -1,0 +1,131 @@
+<div class="icon-blocks">
+
+    <div class="grid-container">
+
+        <h2 class="color-nokia-blue">
+            {{ widget.header }}
+        </h2>
+                
+        <p class="l-size color-gray-5">
+            {{ widget.subheader }}
+        </p> 
+
+        <div class="icon-blocks__inner">
+
+            {% if widget.block_1_header %}
+            <div class="icon-blocks__block">
+
+                {% if widget.block_1_icon.src %}
+                <img class="icon-blocks__img" src="{{ widget.block_1_icon.src }}" alt="{{ widget.block_1_icon.alt }}">
+                {% endif %}
+
+                {% if widget.block_1_url %}
+                <a href="{{ widget.block_1_url }}" class="icon-blocks__header">
+                {% else %}
+                <p class="icon-blocks__header">
+                {% endif %}
+                    {{ widget.block_1_header }}
+                {% if widget.block_1_url %}
+                </a>
+                {% else %}
+                </p>
+                {% endif %}
+
+                {% if widget.block_1_description %}
+                <p class="icon-blocks__desc">
+                    {{ widget.block_1_description }}
+                </p>
+                {% endif %}
+
+            </div>
+            {% endif %}
+
+            {% if widget.block_2_header %}
+            <div class="icon-blocks__block">
+
+                {% if widget.block_2_icon.src %}
+                <img class="icon-blocks__img" src="{{ widget.block_2_icon.src }}" alt="{{ widget.block_2_icon.alt }}">
+                {% endif %}
+
+                {% if widget.block_2_url %}
+                <a href="{{ widget.block_2_url }}" class="icon-blocks__header">
+                {% else %}
+                <p class="icon-blocks__header">
+                {% endif %}
+                    {{ widget.block_2_header }}
+                {% if widget.block_2_url %}
+                </a>
+                {% else %}
+                </p>
+                {% endif %}
+
+                {% if widget.block_2_description %}
+                <p class="icon-blocks__desc">
+                    {{ widget.block_2_description }}
+                </p>
+                {% endif %}
+
+            </div>
+            {% endif %}
+
+            {% if widget.block_3_header %}
+            <div class="icon-blocks__block">
+
+                {% if widget.block_3_icon.src %}
+                <img class="icon-blocks__img" src="{{ widget.block_3_icon.src }}" alt="{{ widget.block_3_icon.alt }}">
+                {% endif %}
+
+                {% if widget.block_3_url %}
+                <a href="{{ widget.block_3_url }}" class="icon-blocks__header">
+                {% else %}
+                <p class="icon-blocks__header">
+                {% endif %}
+                    {{ widget.block_3_header }}
+                {% if widget.block_3_url %}
+                </a>
+                {% else %}
+                </p>
+                {% endif %}
+
+                {% if widget.block_3_description %}
+                <p class="icon-blocks__desc">
+                    {{ widget.block_3_description }}
+                </p>
+                {% endif %}
+
+            </div>
+            {% endif %}
+
+            {% if widget.block_4_header %}
+            <div class="icon-blocks__block">
+
+                {% if widget.block_4_icon.src %}
+                <img class="icon-blocks__img" src="{{ widget.block_4_icon.src }}" alt="{{ widget.block_4_icon.alt }}">
+                {% endif %}
+
+                {% if widget.block_4_url %}
+                <a href="{{ widget.block_4_url }}" class="icon-blocks__header">
+                {% else %}
+                <p class="icon-blocks__header">
+                {% endif %}
+                    {{ widget.block_4_header }}
+                {% if widget.block_4_url %}
+                </a>
+                {% else %}
+                </p>
+                {% endif %}
+
+                {% if widget.block_4_description %}
+                <p class="icon-blocks__desc">
+                    {{ widget.block_4_description }}
+                </p>
+                {% endif %}
+
+            </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,70 @@
+.icon-blocks {
+	padding: 60px 0 0 0;
+}
+
+.icon-blocks__inner {
+	@include display-flex;
+
+	@media (max-width: $break-mob) {
+	    @include flex-direction(column);
+	}
+}
+
+.icon-blocks__block {
+	padding: 20px;
+
+	&:first-child {
+		padding-left: 0;
+	}
+	&:last-child {
+		padding-right: 0;
+	}
+
+	@media (max-width: $break-mob) {
+		&,
+		&:first-child,
+		&:last-child {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+}
+
+.icon-blocks__img {
+	max-height: 70px;
+}
+
+.icon-blocks__header {
+	color: $nokia-blue;
+	font-family: $nph-light;
+	font-size: 18px;
+    position: relative;
+    display: block;
+    margin: 40px 0 30px;
+    line-height: 1.75;
+
+    &:hover {
+    	color: $nokia-blue;
+    }
+
+	&:after {
+		display: inline-block;
+		vertical-align: middle;
+		content: " ";
+		background-image: url(//cdn2.hubspot.net/hubfs/2776717/icons/icons-blue-1.0.1.svg);
+		background-position: 0 -125px;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		margin-left: 8px;
+		top: 2px;
+	}
+}
+
+.icon-blocks__desc {
+	font-family: $nph-light;
+	font-size: 14px;
+	line-height: 2;
+    margin: 0 0;
+
+}

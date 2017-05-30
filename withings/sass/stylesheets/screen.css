@@ -341,15 +341,6 @@ h6 {
   line-height: 2rem;
   font-family: "NokiaPureText-Light", Arial, Helvetica, sans-serif;
 }
-@media (min-width: 800px) {
-  /* line 257, ../sass/_typography.scss */
-  .l-size {
-    font-size: 36px;
-    font-size: 2.25rem;
-    line-height: 46px;
-    line-height: 2.875rem;
-  }
-}
 
 /* line 272, ../sass/_typography.scss */
 .m-size {
@@ -905,7 +896,7 @@ body .grid-container:after {
 }
 /* line 10, ../sass/_hero.scss */
 .hero__wrap.hero__wrap--tall {
-  height: 800px;
+  min-height: 800px;
   background-position: center bottom;
 }
 /* line 14, ../sass/_hero.scss */
@@ -1263,10 +1254,439 @@ body .grid-container:after {
   padding-top: 20px;
 }
 
+/* line 1, ../sass/_icon-blocks.scss */
+.icon-blocks {
+  padding: 60px 0 0 0;
+}
+
+/* line 5, ../sass/_icon-blocks.scss */
+.icon-blocks__inner {
+  display: -webkit-flex;
+  display: flex;
+}
+@media (max-width: 767px) {
+  /* line 5, ../sass/_icon-blocks.scss */
+  .icon-blocks__inner {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/* line 13, ../sass/_icon-blocks.scss */
+.icon-blocks__block {
+  padding: 20px;
+}
+/* line 16, ../sass/_icon-blocks.scss */
+.icon-blocks__block:first-child {
+  padding-left: 0;
+}
+/* line 19, ../sass/_icon-blocks.scss */
+.icon-blocks__block:last-child {
+  padding-right: 0;
+}
+@media (max-width: 767px) {
+  /* line 24, ../sass/_icon-blocks.scss */
+  .icon-blocks__block, .icon-blocks__block:first-child, .icon-blocks__block:last-child {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* line 33, ../sass/_icon-blocks.scss */
+.icon-blocks__img {
+  max-height: 70px;
+}
+
+/* line 37, ../sass/_icon-blocks.scss */
+.icon-blocks__header {
+  color: #124191;
+  font-family: "NokiaPureHeadline_Light", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  position: relative;
+  display: block;
+  margin: 40px 0 30px;
+  line-height: 1.75;
+}
+/* line 46, ../sass/_icon-blocks.scss */
+.icon-blocks__header:hover {
+  color: #124191;
+}
+/* line 50, ../sass/_icon-blocks.scss */
+.icon-blocks__header:after {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  background-image: url(//cdn2.hubspot.net/hubfs/2776717/icons/icons-blue-1.0.1.svg);
+  background-position: 0 -125px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  margin-left: 8px;
+  top: 2px;
+}
+
+/* line 64, ../sass/_icon-blocks.scss */
+.icon-blocks__desc {
+  font-family: "NokiaPureHeadline_Light", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  margin: 0 0;
+}
+
+/* line 1, ../sass/_stats.scss */
+.stats {
+  padding: 60px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 8, ../sass/_stats.scss */
+.stats__inner {
+  display: -webkit-flex;
+  display: flex;
+  padding: 20px 0 70px 0;
+}
+@media (max-width: 767px) {
+  /* line 8, ../sass/_stats.scss */
+  .stats__inner {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+  }
+}
+
+/* line 18, ../sass/_stats.scss */
+.stats__block {
+  padding: 30px;
+}
+/* line 21, ../sass/_stats.scss */
+.stats__block:first-child {
+  padding-left: 0;
+}
+/* line 24, ../sass/_stats.scss */
+.stats__block:last-child {
+  padding-right: 0;
+}
+@media (max-width: 767px) {
+  /* line 29, ../sass/_stats.scss */
+  .stats__block, .stats__block:first-child, .stats__block:last-child {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* line 38, ../sass/_stats.scss */
+.stats__num {
+  font-size: 60px;
+  font-family: "NokiaPureHeadline_Light", Arial, Helvetica, sans-serif;
+  line-height: 1;
+  margin: 0 0;
+}
+
+/* line 45, ../sass/_stats.scss */
+.stats__desc,
+.stats__attr {
+  font-size: 24px;
+}
+
+/* line 50, ../sass/_stats.scss */
+.stats__desc {
+  margin: 15px 0 10px;
+}
+
+/* line 54, ../sass/_stats.scss */
+.stats__attr {
+  margin: 0 0;
+}
+
+/* line 1, ../sass/_logos.scss */
+.logos {
+  padding: 20px 0;
+}
+
+/* line 5, ../sass/_logos.scss */
+.logos__inner {
+  display: -webkit-flex;
+  display: flex;
+  padding: 0px 0;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  /* line 5, ../sass/_logos.scss */
+  .logos__inner {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+}
+
+/* line 18, ../sass/_logos.scss */
+.logos__block {
+  padding: 20px;
+}
+/* line 21, ../sass/_logos.scss */
+.logos__block:first-child {
+  padding-left: 0;
+}
+/* line 24, ../sass/_logos.scss */
+.logos__block:last-child {
+  padding-right: 0;
+}
+@media (max-width: 767px) {
+  /* line 29, ../sass/_logos.scss */
+  .logos__block, .logos__block:first-child, .logos__block:last-child {
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 200px;
+  }
+}
+
+/* line 39, ../sass/_logos.scss */
+.logos__img {
+  width: 100%;
+}
+
 /* line 1, ../sass/_form.scss */
 .form--photo {
   background-image: url(https://cdn2.hubspot.net/hubfs/2776717/site/Form%20image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  padding: 50px 0;
+}
+/* line 8, ../sass/_form.scss */
+.form--photo form.hs-form input,
+.form--photo form.hs-form textarea,
+.form--photo form.hs-form select,
+.form--photo form.hs-form input[type="submit"] {
+  border: 1px solid #fff;
+  color: #fff;
+}
+/* line 17, ../sass/_form.scss */
+.form--photo form.hs-form input[type="submit"]:hover {
+  background: #fff;
+  color: #001135;
+}
+/* line 23, ../sass/_form.scss */
+.form--photo form.hs-form input:focus,
+.form--photo form.hs-form textarea:focus,
+.form--photo form.hs-form select:focus {
+  border: 1px solid #fff;
+}
+/* line 29, ../sass/_form.scss */
+.form--photo form.hs-form .hs-form-field label,
+.form--photo h3.form-title {
+  color: #fff;
+}
+/* line 34, ../sass/_form.scss */
+.form--photo form.hs-form .hs-form-required {
+  display: none;
+}
+/* line 38, ../sass/_form.scss */
+.form--photo ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #fff;
+}
+/* line 42, ../sass/_form.scss */
+.form--photo :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+}
+/* line 47, ../sass/_form.scss */
+.form--photo ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+/* line 52, ../sass/_form.scss */
+.form--photo :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+/* line 56, ../sass/_form.scss */
+.form--photo ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+
+/* line 62, ../sass/_form.scss */
+h3.form-title {
+  font-size: 64px;
+  font-family: "NokiaPureHeadline_Light", Arial, Helvetica, sans-serif;
+  margin: 20px 0 40px 0;
+}
+
+/* line 68, ../sass/_form.scss */
+fieldset.form-columns-3 .input,
+fieldset.form-columns-2 .input,
+fieldset.form-columns-1 .input,
+form.hs-form .hs_submit {
+  margin-right: 30px !important;
+}
+
+/* line 75, ../sass/_form.scss */
+fieldset.form-columns-3 .hs-form-field {
+  width: 33.3% !important;
+}
+@media (max-width: 767px) {
+  /* line 75, ../sass/_form.scss */
+  fieldset.form-columns-3 .hs-form-field {
+    width: 100% !important;
+  }
+}
+
+/* line 83, ../sass/_form.scss */
+form.hs-form .hs-form-required {
+  color: #FF3154;
+  padding-left: 3px;
+}
+
+/* line 88, ../sass/_form.scss */
+form.hs-form input,
+form.hs-form textarea,
+form.hs-form select,
+form.hs-form input[type="submit"] {
+  padding: 15px;
+  background: transparent;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid #273142;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "NokiaPureText-Light", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* line 103, ../sass/_form.scss */
+form.hs-form input[type="submit"] {
+  padding: 8px;
+}
+
+/* line 107, ../sass/_form.scss */
+form.hs-form input[type="radio"],
+form.hs-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 20px;
+}
+
+/* line 113, ../sass/_form.scss */
+form.hs-form input,
+form.hs-form textarea,
+form.hs-form select,
+.hs-form-radio-display span,
+.hs-form-checkbox-display span,
+.hs-form-booleancheckbox-display span {
+  font-size: 20px;
+}
+
+/* line 122, ../sass/_form.scss */
+form.hs-form input:focus,
+form.hs-form textarea:focus,
+form.hs-form select:focus {
+  outline: none;
+  border: 1px solid #000;
+}
+
+/* line 129, ../sass/_form.scss */
+form.hs-form select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+/* line 132, ../sass/_form.scss */
+form.hs-form select:focus {
+  outline: none;
+}
+
+/* line 137, ../sass/_form.scss */
+form.hs-form .hs-form-field label {
+  padding-bottom: 2px;
+  display: block;
+}
+/* line 141, ../sass/_form.scss */
+form.hs-form .hs-form-field label.hs-form-radio-display, form.hs-form .hs-form-field label.hs-form-checkbox-display {
+  padding-bottom: 0;
+}
+
+/* line 147, ../sass/_form.scss */
+form.hs-form .hs_submit {
+  text-align: center;
+}
+/* line 150, ../sass/_form.scss */
+form.hs-form .hs_submit .actions {
+  display: inline-block;
+  width: 100%;
+}
+/* line 154, ../sass/_form.scss */
+form.hs-form .hs_submit input {
+  margin-top: 15px;
+}
+
+/* line 159, ../sass/_form.scss */
+form.hs-form .hs-form-field {
+  padding: 10px 0;
+}
+
+/* line 163, ../sass/_form.scss */
+form.hs-form fieldset,
+form.hs-form {
+  max-width: 780px;
+}
+
+/* line 169, ../sass/_form.scss */
+form.hs-form fieldset:first-child {
+  padding-top: 0;
+}
+/* line 173, ../sass/_form.scss */
+form.hs-form fieldset:last-child {
+  padding-bottom: 0;
+}
+/* line 177, ../sass/_form.scss */
+form.hs-form fieldset.form-columns-1 .hs-input {
+  width: 100%;
+}
+
+/* line 183, ../sass/_form.scss */
+form.hs-form .hs-error-msgs.inputs-list {
+  margin: 0 0;
+  color: #FF3154;
+  list-style-type: none;
+  padding: 5px 0 0 0;
+}
+/* line 189, ../sass/_form.scss */
+form.hs-form .hs-error-msgs.inputs-list li {
+  margin: 0 0;
+}
+/* line 193, ../sass/_form.scss */
+form.hs-form .hs-error-msgs.inputs-list label {
+  font-size: 14px;
+  padding: 0 0;
+  color: #fff;
+}
+/* line 199, ../sass/_form.scss */
+form.hs-form .hs-error-msgs * {
+  color: #FF3154;
+}
+
+@media (max-width: 400px), (max-device-width: 480px) and (min-device-width: 320px) {
+  /* line 206, ../sass/_form.scss */
+  form.hs-form fieldset.form-columns-2 .hs-form-field .hs-input,
+  form.hs-form fieldset.form-columns-3 .hs-form-field .hs-input {
+    width: 100%;
+  }
+
+  /* line 211, ../sass/_form.scss */
+  fieldset.form-columns-3 .input,
+  fieldset.form-columns-2 .input,
+  fieldset.form-columns-1 .input,
+  form.hs-form .hs_submit {
+    margin-right: 0 !important;
+  }
 }
