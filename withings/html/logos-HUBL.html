@@ -9,33 +9,93 @@
         <div class="logos__inner">
 
             {% if widget.logo_1_image.src %}
-            <a href="{{ widget.logo_1_url }}" target="_blank" class="logos__block">
-                <img class="logos__img" src="{{ widget.logo_1_image.src }}" alt="{{ widget.logo_1_image.alt }}">
-            </a>
+
+                {% if widget.logo_1_url %}
+                <a href="{{ widget.logo_1_url }}" target="_blank" class="logos__block">
+                {% else %}
+                <div class="logos__block">
+                {% endif %}
+
+                    <img class="logos__img" src="{{ widget.logo_1_image.src }}" alt="{{ widget.logo_1_image.alt }}">
+
+                {% if widget.logo_1_url %}
+                </a>
+                {% else %}
+                </div>
+                {% endif %}
+
             {% endif %}
 
             {% if widget.logo_2_image.src %}
-            <a href="{{ widget.logo_2_url }}" target="_blank" class="logos__block">
-                <img class="logos__img" src="{{ widget.logo_2_image.src }}" alt="{{ widget.logo_2_image.alt }}">
-            </a>
+
+                {% if widget.logo_2_url %}
+                <a href="{{ widget.logo_2_url }}" target="_blank" class="logos__block">
+                {% else %}
+                <div class="logos__block">
+                {% endif %}
+
+                    <img class="logos__img" src="{{ widget.logo_2_image.src }}" alt="{{ widget.logo_2_image.alt }}">
+
+                {% if widget.logo_2_url %}
+                </a>
+                {% else %}
+                </div>
+                {% endif %}
+
             {% endif %}
 
             {% if widget.logo_3_image.src %}
-            <a href="{{ widget.logo_3_url }}" target="_blank" class="logos__block">
-                <img class="logos__img" src="{{ widget.logo_3_image.src }}" alt="{{ widget.logo_3_image.alt }}">
-            </a>
+
+                {% if widget.logo_3_url %}
+                <a href="{{ widget.logo_3_url }}" target="_blank" class="logos__block">
+                {% else %}
+                <div class="logos__block">
+                {% endif %}
+
+                    <img class="logos__img" src="{{ widget.logo_3_image.src }}" alt="{{ widget.logo_3_image.alt }}">
+
+                {% if widget.logo_3_url %}
+                </a>
+                {% else %}
+                </div>
+                {% endif %}
+
             {% endif %}
 
             {% if widget.logo_4_image.src %}
-            <a href="{{ widget.logo_4_url }}" target="_blank" class="logos__block">
-                <img class="logos__img" src="{{ widget.logo_4_image.src }}" alt="{{ widget.logo_4_image.alt }}">
-            </a>
+
+                {% if widget.logo_4_url %}
+                <a href="{{ widget.logo_4_url }}" target="_blank" class="logos__block">
+                {% else %}
+                <div class="logos__block">
+                {% endif %}
+
+                    <img class="logos__img" src="{{ widget.logo_4_image.src }}" alt="{{ widget.logo_4_image.alt }}">
+
+                {% if widget.logo_4_url %}
+                </a>
+                {% else %}
+                </div>
+                {% endif %}
+
             {% endif %}
 
             {% if widget.logo_5_image.src %}
-            <a href="{{ widget.logo_5_url }}" target="_blank" class="logos__block">
-                <img class="logos__img" src="{{ widget.logo_5_image.src }}" alt="{{ widget.logo_5_image.alt }}">
-            </a>
+
+                {% if widget.logo_5_url %}
+                <a href="{{ widget.logo_5_url }}" target="_blank" class="logos__block">
+                {% else %}
+                <div class="logos__block">
+                {% endif %}
+
+                    <img class="logos__img" src="{{ widget.logo_5_image.src }}" alt="{{ widget.logo_5_image.alt }}">
+
+                {% if widget.logo_5_url %}
+                </a>
+                {% else %}
+                </div>
+                {% endif %}
+
             {% endif %}
 
         </div>

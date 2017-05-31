@@ -1,4 +1,4 @@
-<div class="hero__wrap {% if widget.background_image.src %}hero__wrap--bg{% endif %} {{ widget.special_formatting }}" {% if widget.background_image.src %}style="background-image: url('{{ widget.background_image.src }}')"{% endif %}>
+<div class="hero__wrap {% if widget.background_image.src %}hero__wrap--bg{% endif %} {{ widget.special_formatting }}" {% if widget.background_image.src %}style="background-image: url('{{ widget.background_image.src }}')"{% endif %} id="{{ widget.anchor }}">
 
     <div class="grid-container">
 
@@ -37,7 +37,6 @@
                 {% if widget.cta_copy %}
                 <a class="btn {% if not widget.background_image.src %}btn--dark{% endif %}" href="{{ widget.cta_url }}" target="_blank" rel="nofollow">
                     {{ widget.cta_copy }}
-                    <span class="0"><span class="element-invisible"> </span></span>
                 </a>
                 {% endif %}
 

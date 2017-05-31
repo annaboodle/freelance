@@ -11,6 +11,10 @@
 		min-height: 800px;
 		background-position: center bottom;
 
+		@media (max-width: $break-mob) {
+			background-position: right bottom;
+		}
+
 		.hero__head {
 			color: $nokia-blue;
 		}
@@ -124,6 +128,7 @@
 
 	img {
 		max-width: 100%;
+		width: 100%;
 	}
 
 	@media (max-width: $break-mob) {

@@ -1,0 +1,26 @@
+<div class="fw-graphic">
+
+    <div class="grid-container">
+
+    	{% if widget.header %}
+        <h2 class="color-nokia-blue">
+            {{ widget.header }}
+        </h2>
+        {% endif %}
+        
+    	{% if widget.subheader %}
+        <p class="l-size color-gray-5">
+        	{{ widget.subheader }}
+        </p> 
+        {% endif %}
+    
+        <img src="{{ widget.desktop_version.src }}" alt="{{ widget.desktop_version.alt }}" class="fw-graphic__desktop {% if not widget.mobile_version.src %}fw-graphic__no-mobile{% endif %}">
+
+		{% if widget.mobile_version.src %}
+	        <img src="{{ widget.mobile_version.src }}" alt="{{ widget.mobile_version.alt }}" class="fw-graphic__mobile">
+        {% endif %}
+
+    </div>
+
+</div>
+

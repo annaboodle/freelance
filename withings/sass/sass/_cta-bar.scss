@@ -1,3 +1,22 @@
-.cta__bar {
+.cta-bar {
 	padding-top: 20px;
+}
+
+.cta-bar__link {
+	&:after {
+		content: "";
+		background-position: 0 -125px;
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 0 4px 0;
+		background-image: url(//cdn2.hubspot.net/hubfs/2776717/icons/icons-white-1.0.1.svg?t=1496162045403);
+	}
+
+	&:hover {
+		&:after {
+			opacity: .7;
+		}
+	}
 }

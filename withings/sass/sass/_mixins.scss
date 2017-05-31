@@ -69,6 +69,43 @@ button,
     }
 }
 
+@mixin arrow-after {
+    &:after {
+        display: inline-block;
+        vertical-align: middle;
+        content: " "; 
+        background-position: 0 -125px;
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+        top: -3px;
+        position: relative;
+        display: inline-block;
+    }
+}
+
+@mixin blue-arrow-after {
+    &:after {
+        background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-blue-1.0.1.svg");
+    }
+}
+
+@mixin white-arrow-after {
+    &:after {
+        background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-white-1.0.1.svg");
+    }
+}
+
+// .blue-arrow-after {
+//     @include arrow-after;
+//     @include blue-arrow-after;
+// }
+
+// .white-arrow-after {
+//     @include arrow-after;
+//     @include white-arrow-after;
+// }
+
 // BUTTON COLOR OPTIONS: 
 
 // button.go-to.icon-white:after,

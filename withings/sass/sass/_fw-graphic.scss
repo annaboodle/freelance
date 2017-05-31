@@ -1,0 +1,31 @@
+.fw-graphic {
+	padding: 40px 0;
+}
+
+.fw-graphic__desktop {
+	display: inline-block;
+
+	@media (max-width: $break-mob) {
+		display: none;
+	}
+
+	&.fw-graphic__no-mobile {
+		@media (max-width: $break-mob) {
+			display: inline-block;
+		}
+	}
+}
+
+.fw-graphic__mobile {
+	display: none;
+
+	@media (max-width: $break-mob) {
+		display: inline-block;
+	}
+}
+
+.fw-graphic__desktop,
+.fw-graphic__mobile {
+    width: 100%;
+    padding: 30px 0 0 0;
+}
