@@ -60,7 +60,7 @@
 }
 
 .hero__head {
-
+	margin-top: 0;
 }
 
 .hero__subhead {
@@ -153,3 +153,20 @@
 		margin: 0;
 	}
 }
+
+
+
+.hero--lp {
+	.hero__inner {
+		@include align-items(flex-start);
+
+		@media (max-width: $break-mob) {
+			@include align-items(center);
+		}
+	}
+
+	.lp__text {
+		padding: 0 0 15px 0;
+	}
+}
+

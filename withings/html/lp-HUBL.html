@@ -1,0 +1,47 @@
+{% image "cover" label="Offer image" src="https://cdn2.hubspot.net/hubfs/2776717/home/Webinar%20image.jpg", export_to_template_context=True %}
+
+<div class="hero__wrap hero--lp">
+
+    <div class="grid-container">
+
+        <div class="hero__inner hero__inner--with-img hero__inner--text-right">
+
+            
+            <div class="hero__img">
+                <img src="{{ widget_data.cover.src }}" alt="{{ widget_data.cover.src }}">
+            </div>
+            
+
+            <div class="hero__text hero__text--large">
+
+                <div class="lp__text">
+                
+                    <h1 class="hero__head color-nokia-blue">
+                        {% text "header" label="Title", value="Download the ebook", no_wrapper=True %}                        
+                    </h1>
+                    
+                    <p class="hero__subhead l-size color-gray-5">
+                        {% text "subheader" label="Tagline", value="How to boost wellness engagement rates", no_wrapper=True %}                        
+                    </p> 
+                   
+                    <div class="hero__desc color-gray-5">
+                        {% rich_text "description" label="Description" html='
+                        <ul>
+                            <li>Engagement dashboards: Assess company participation and measure program success</li>
+                            <li>Branded in-app communication: Customize messages, send to the whole community or only certain groups, and measure impact and responsiveness</li>
+                            <li>Advanced health analytics: Analyze aggregated data and understand risks and compare metrics against national averages</li>
+                        </ul>
+                        ' %}
+                    </div>
+                
+                </div>
+
+                {% form "Form" %}                  
+
+            </div>
+
+        </div>
+
+    </div> 
+
+</div>

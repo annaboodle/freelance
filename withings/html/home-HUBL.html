@@ -1,0 +1,226 @@
+{% image "block_1_bg" label="BLOCK 1: Background" src="https://cdn2.hubspot.net/hubfs/2776717/home/Patient%20care%20hero.jpg", export_to_template_context=True %}
+{% text "block_1_url" label="BLOCK 1: URL", value="#", export_to_template_context=True %}                        
+
+{% image "block_2_bg" label="BLOCK 2: Background" src="https://cdn2.hubspot.net/hubfs/2776717/home/Corporate%20wellness%20hero.jpg", export_to_template_context=True %}
+{% text "block_2_url" label="BLOCK 2: URL", value="#", export_to_template_context=True %}                        
+
+{% image "block_3_bg" label="BLOCK 3: Background" src="https://cdn2.hubspot.net/hubfs/2776717/home/Health%20institute.jpg", export_to_template_context=True %}
+{% text "block_3_url" label="BLOCK 3: URL", value="#", export_to_template_context=True %}                        
+
+{% text "cta_1_url" label="CTA 1: URL", value="#", export_to_template_context=True %}                        
+
+{% text "block_4_url" label="BLOCK 4: URL", value="#", export_to_template_context=True %}                        
+
+{% image "block_5_bg" label="BLOCK 5: Background" src="https://cdn2.hubspot.net/hubfs/2776717/home/Webinar%20image.jpg", export_to_template_context=True %}
+{% text "block_5_url" label="BLOCK 5: URL", value="#", export_to_template_context=True %}                        
+
+{% text "cta_2_url" label="CTA 2: URL", value="#", export_to_template_context=True %}                        
+
+{% text "cta_3_url" label="CTA 3: URL", value="#", export_to_template_context=True %}                        
+
+
+
+<div class="home__wrap">
+
+    <div class="grid-container">
+
+        <div class="home__top">
+
+            <a href="{{ widget_data.block_1_url.value }}" class="home__panel home__top-1" style="background-image: url('{{ widget_data.block_1_bg.src }}')">
+                <div class="home__text">
+                    <h1 class="home__title color-white">
+            	        {% text "block_1_title" label="BLOCK 1: Title", value="Scalable remote patient monitoring", no_wrapper=True %}                        
+                    </h1>
+                    <p class="home__desc color-white">
+            	        {% text "block_1_desc" label="BLOCK 1: Description", value="Devices that patients love with the data that clinicians need", no_wrapper=True %}                        
+                    </p>
+                </div>
+                <!-- <img class="home__img" src="{{ widget_data.block_1_bg.src }}" alt="{{ widget_data.block_1_bg.alt }}"> -->
+            </a>
+
+            <a href="{{ widget_data.block_2_url.value }}" class="home__panel home__top-2" style="background-image: url('{{ widget_data.block_2_bg.src }}')">
+                <div class="home__text">
+                    <h2 class="home__title color-white">
+            	        {% text "block_2_title" label="BLOCK 2: Title", value="Corporate Wellness", no_wrapper=True %}                        
+                    </h2>
+                    <p class="home__desc color-white">
+            	        {% text "block_2_desc" label="BLOCK 2: Description", value="Healthy solutions for your workforce", no_wrapper=True %}                        
+                    </p>
+                </div>
+                <!-- <img class="home__img" src="{{ widget_data.block_2_bg.src }}" alt="{{ widget_data.block_2_bg.alt }}"> -->
+            </a>
+
+        </div>
+
+        <div class="home__main">
+
+            <div class="home__main-col">
+
+                <a href="{{ widget_data.block_2_url.value }}" class="home__panel home__main-1" style="background-image: url('{{ widget_data.block_3_bg.src }}')">
+                    <div class="home__text">
+                        <h1 class="home__title color-white">
+	            	        {% text "block_3_title" label="BLOCK 3: Title", value="Nokia Health Institute", no_wrapper=True %}                        
+                        </h1>
+                        <p class="home__desc color-white">
+	            	        {% text "block_3_desc" label="BLOCK 3: Description", value="", no_wrapper=True %}                        
+                        </p>
+                    </div>
+                    <!-- <img class="home__img" src="{{ widget_data.block_3_bg.src }}" alt="{{ widget_data.block_3_bg.alt }}"> -->
+                </a>
+
+                <a href="{{ widget_data.cta_1_url.value }}" class="home__cta-block color-blue-black">
+                    <span class="home__cta-block-copy">
+            	        {% text "cta_1_copy" label="CTA 1: Copy", value="Leverage smart data to solve health’s biggest research challenges", no_wrapper=True %}
+                    </span>
+                </a>
+
+                <a href="{{ widget_data.block_4_url.value }}" class="home__panel home__main-2">
+                    <div class="home__text home__text--bg">
+                        <p class="home__desc color-white">
+	            	        {% text "block_4_copy" label="BLOCK 4: Copy", value="Read our latest research studies", no_wrapper=True %}
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="home__main-col">
+
+                <a href="{{ widget_data.cta_2_url.value }}" class="home__cta-block color-blue-black">
+                    <span class="home__cta-block-copy">
+            	        {% text "cta_2_copy" label="CTA 2: Copy", value="Learn the latest insights on health tech", no_wrapper=True %}
+                    </span>
+                </a>
+
+                <a href="{{ widget_data.block_2_url.value }}" class="home__panel home__main-3" style="background-image: url('{{ widget_data.block_5_bg.src }}')">
+                    <div class="home__text">
+                        <h1 class="home__title color-white">
+	            	        {% text "block_5_title" label="BLOCK 5: Title", value="", no_wrapper=True %}                        
+                        </h1>
+                        <p class="home__desc color-white">
+	            	        {% text "block_5_desc" label="BLOCK 5: Description", value="", no_wrapper=True %}                        
+                        </p>
+                    </div>
+                    <!-- <img class="home__img" src="{{ widget_data.block_5_bg.src }}" alt="{{ widget_data.block_5_bg.alt }}"> -->
+                </a>
+
+                <a href="{{ widget_data.cta_3_url.value }}" class="home__cta-block color-blue-black">
+                    <span class="home__cta-block-copy">
+            	        {% text "cta_3_copy" label="CTA 3: Copy", value="Register for our next webinar: What to expect from CCM in 2018 on June 5 at 2 pm EST", no_wrapper=True %}
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- 
+
+<div class="home__wrap">
+
+
+    <div class="grid-container">
+
+
+        <div class="home__top">
+
+            <a href="#" class="home__panel home__top-1" style="background-image: url('https://s-media-cache-ak0.pinimg.com/736x/77/05/be/7705bea9f596b89bd3e4a5a087b6f66d.jpg')">
+                <div class="home__text">
+                    <h1 class="home__title color-white">
+                        Scalable remote patient monitoring
+                    </h1>
+                    <p class="home__desc color-white">
+                        Devices that patients love with the data that clinicians need
+                    </p>
+                </div>
+                <img class="home__img" src="https://s-media-cache-ak0.pinimg.com/736x/77/05/be/7705bea9f596b89bd3e4a5a087b6f66d.jpg" alt="wombat">
+            </a>
+
+            <div class="home__panel home__top-2" style="background-image: url('https://s-media-cache-ak0.pinimg.com/736x/77/05/be/7705bea9f596b89bd3e4a5a087b6f66d.jpg')">
+                <div class="home__text">
+                    <h2 class="home__title color-white">
+                        Corporate Wellness
+                    </h2>
+                    <p class="home__desc color-white">
+                        Healthy solutions for your workforce
+                    </p>
+                </div>
+                <img class="home__img" src="https://s-media-cache-ak0.pinimg.com/736x/77/05/be/7705bea9f596b89bd3e4a5a087b6f66d.jpg" alt="wombat">
+            </div>
+
+        </div>
+
+        <div class="home__main">
+
+            <div class="home__main-col">
+
+                <a href="#" class="home__panel home__main-1" style="background-image: url('https://s-media-cache-ak0.pinimg.com/736x/77/05/be/7705bea9f596b89bd3e4a5a087b6f66d.jpg')">
+                    <div class="home__text">
+                        <h1 class="home__title color-white">
+                            Scalable remote patient monitoring
+                        </h1>
+                        <p class="home__desc color-white">
+                            Devices that patients love with the data that clinicians need
+                        </p>
+                    </div>
+                    <img class="home__img" src="https://s-media-cache-ak0.pinimg.com/736x/77/05/be/7705bea9f596b89bd3e4a5a087b6f66d.jpg" alt="wombat">
+                </a>
+
+                <a href="#" class="home__cta-block color-blue-black">
+                    <span class="home__cta-block-copy">
+                        Leverage smart data to solve health’s biggest research challenges
+                    </span>
+                </a>
+
+                <a href="#" class="home__panel home__main-2">
+                    <div class="home__text home__text--bg">
+                        <p class="home__desc color-white">
+                            Read our latest studies
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="home__main-col">
+
+                <a href="#" class="home__cta-block color-blue-black">
+                    <span class="home__cta-block-copy">
+                        Learn the latest insights on health tech
+                    </span>
+                </a>
+
+                <a href="#" class="home__panel home__main-3" style="background-image: url('https://s-media-cache-ak0.pinimg.com/736x/77/05/be/7705bea9f596b89bd3e4a5a087b6f66d.jpg')">
+                    <div class="home__text">
+                        <h1 class="home__title color-white">
+                            Scalable remote patient monitoring
+                        </h1>
+                        <p class="home__desc color-white">
+                            Devices that patients love with the data that clinicians need
+                        </p>
+                    </div>
+                    <img class="home__img" src="https://s-media-cache-ak0.pinimg.com/736x/77/05/be/7705bea9f596b89bd3e4a5a087b6f66d.jpg" alt="wombat">
+                </a>
+
+                <a href="#" class="home__cta-block color-blue-black">
+                    <span class="home__cta-block-copy">
+                        Register for our next webinar: What to expect from CCM in 2018 on June 5 at 2 pm EST
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+ -->

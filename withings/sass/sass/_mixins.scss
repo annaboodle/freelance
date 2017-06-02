@@ -85,12 +85,14 @@ button,
 }
 
 @mixin blue-arrow-after {
+    @include arrow-after;
     &:after {
         background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-blue-1.0.1.svg");
     }
 }
 
 @mixin white-arrow-after {
+    @include arrow-after;
     &:after {
         background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-white-1.0.1.svg");
     }
