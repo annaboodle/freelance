@@ -1,0 +1,241 @@
+.nav-bar {
+	@media (max-width: $break-mob) {
+	    padding-top: 0;
+
+	    .grid-container {
+	    	padding-bottom: 0;
+	    }
+	}	
+}
+
+.nav-bar__logo-img {
+	max-width: 105.4px;
+	max-height: 31.25px;
+}
+
+.nav-bar__logo-text {
+	color: $black; 
+    padding-top: 5px;
+    font-size: 16px;
+
+	&:before {
+		content: "|";
+		color: $gray-3;
+	    padding: 0 15px;
+	}
+
+	@media (max-width: $break-nav) {
+	    display: none;
+	}
+}
+
+.nav-bar__logo {
+    @include display-flex;
+    @include justify-content(space-between);
+    @include align-items(center);
+
+	@media (max-width: $break-mob) {
+	    width: 100%;
+	}
+}
+
+.nav-bar__logo-link {
+	@include flex-grow(3);  
+    @include display-flex;
+    @include align-items(center);
+    @include justify-content(flex-start);  
+        margin-top: -5px;
+}
+
+.nav-bar__topnav {
+	@include display-flex;
+    @include align-items(center);
+    @include justify-content(space-between);
+
+	@media (max-width: $break-mob) {
+		@include flex-direction(column);
+		@include align-items(flex-start);
+	}
+}
+
+.nav__menu {
+	@media (min-width: $break-mob + 1) {	
+	    display: -webkit-flex !important;
+		display: flex !important;
+	}
+
+	@media (max-width: $break-mob) {
+		display: none;
+		@include flex-direction(column);
+	    padding: 20px 0 0 0;
+        width: 100%;
+	}
+}
+
+.nav__section {
+    display: inline-block;
+
+	@media (max-width: $break-mob) {
+	    // padding: 10px 30px;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    &:last-child {
+		.nav__mobile-expand a {
+		    padding-right: 0;
+		}
+    }
+}
+
+.nav__mobile-expand {
+    margin: 0 0;
+
+	a {
+	    padding: 10px 30px;
+
+    	@media (max-width: $break-large) {
+		    padding: 10px 20px;
+		}
+
+    	@media (max-width: $break-mob) {
+	        padding: 5px 30px 10px 20px;
+		    @include flex-grow(3);
+		}
+	}
+
+    @media (max-width: $break-mob) {
+		margin: 0 0;
+		font-size: 18px;
+		padding: 0 0;
+		@include display-flex;
+		@include justify-content(space-between);
+
+    }
+
+}
+
+.nav__mobile-expand a,
+.nav__mobile-toggle {
+	@include flex-basis(0);
+}
+
+.nav__mobile-toggle {
+	display: none;
+
+	@media (max-width: $break-mob) {
+		display: inline-block;
+		cursor: pointer;
+		top: 0;
+		position: relative;
+		padding: 5px 10px 5px 30px;
+		@include flex-grow(1);
+		text-align: right;
+
+        &.expanded {
+			.nav__mobile-toggle-img {
+                @include transform(scale(1.2) rotate(45deg));
+            }
+        }
+    }
+
+}
+
+.nav__mobile-toggle-img {
+    background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-blue-1.0.1.svg");
+	@include transform(scale(1.2));
+	background-position: 0 -1884px;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav__section-list {
+    display: none;
+}
+
+.nav__section-list a {
+    display: block;
+    margin: 0 0;
+    padding: 8px 20px;
+}
+
+.grid-container.subnav--grid {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.subnav {
+	@media (max-width: $break-mob) {
+        display: none;
+    }
+}
+
+.nav-bar__subnav {
+	@include display-flex;
+    @include align-items(center);
+    @include justify-content(space-between);
+    font-size: 16px;
+
+    .nav-bar__list {
+		@include display-flex;
+	    @include align-items(center);
+	    @include justify-content(space-between);
+
+	    li {
+	    	&:not(:last-child){
+	    		&:after {
+	    			content: "|";
+	    		}
+	    	}
+	    	&:last-child {
+				padding-right: 0;
+	    	}
+	    }
+    }
+}
+
+.nav-bar__subnav-title {
+	font-family: $npt-regular;
+
+	&.nav-bar__subnav-link {
+		padding-left: 0;
+	}
+}
+
+
+.nav-bar__subnav-link {
+    padding: 5px 30px;
+
+	@media (max-width: $break-large) {
+	    padding: 5px 12px;
+	}
+}
+
+.nav__mob-menu-toggle {
+	display: none;
+	padding: 5px 0 5px 30px;
+	@include flex-grow(1);
+	text-align: right;
+	cursor: pointer;
+
+
+	@media (max-width: $break-mob) {
+		display: inline-block;
+    }	
+}
+
+.nav__mob-menu-icon {
+	display: inline-block;
+	background-position: 0 -1690px;
+	width: 36px;
+	height: 36px;
+	margin: 10px 0 0 0;
+	background-image: url("//cdn2.hubspot.net/hubfs/2776717/icons/icons-blue-1.0.1.svg");   
+}
+
+.nav__mob-menu-toggle,
+.nav-bar__logo-link {
+	@include flex-basis(0);
+}

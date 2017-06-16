@@ -1,0 +1,273 @@
+<div class="nav-bar padding-XS-top">
+
+    <div class="grid-container">
+
+        <div class="nav-bar__topnav">
+
+            <div class="nav-bar__logo">
+                <a class="nav-bar__logo-link" href="/">
+                    <img class="nav-bar__logo-img" src="https://cdn2.hubspot.net/hubfs/2776717/site/Nokia%20logo%20big-01.png">
+                    <span class="nav-bar__logo-text">
+                        Health Solutions
+                    </span>
+                </a>
+
+                <div class="nav__mob-menu-toggle">
+                <div class="nav__mob-menu-icon"></div>
+                </div>
+            </div>
+
+            <nav class="nav__menu">
+
+                <div class="nav__section">
+                    <h6 class="nav__mobile-expand">
+                        <a href="/corporate-wellness">
+                            Corporate Wellness
+                        </a>
+                        <span class="nav__mobile-toggle">
+                            <span class="nav__mobile-toggle-img"></span>
+                        </span>
+                    </h6>
+                    <ul class="nav__section-list">
+                        <li>
+                            <a class="label" href="/corporate-wellness/solutions">
+                                Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a class="label" href="/corporate-wellness/resources">
+                                Resources
+                            </a>
+                        </li>
+                        <li>
+                            <a class="label" href="/corporate-wellness/blog">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a class="label" href="/corporate-wellness/gifts">
+                                Gifts
+                            </a>
+                        </li>
+                        <li>
+                            <a class="label" href="/corporate-wellness/contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__section">
+                    <h6 class="nav__mobile-expand">
+                        <a href="/patient-care">
+                            Patient Care
+                        </a>
+                        <span class="nav__mobile-toggle">
+                            <span class="nav__mobile-toggle-img"></span>
+                        </span>
+                    </h6>
+                    <ul class="nav__section-list">
+                        <li>
+                            <a class="label" href="/patient-care/solutions">
+                                Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a class="label" href="/patient-care/resources">
+                                Resources
+                            </a>
+                        </li>
+                        <li>
+                            <a class="label" href="/patient-care/blog">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a class="label" href="/patient-care/contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__section">
+                    <h6 class="nav__mobile-expand">
+                        <a href="/health-institute">
+                            Health Institute
+                        </a>
+                        <span class="nav__mobile-toggle">
+                            <span class="nav__mobile-toggle-img"></span>
+                        </span>
+                    </h6>
+                    <ul class="nav__section-list">
+                        <li>
+                            <a class="label" href="/health-institute/solutions">
+                                Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a class="label" href="/health-institute/accuracy">
+                                Clinical Accuracy
+                            </a>
+                        </li>
+                        <li>
+                            <a class="label" href="/health-institute/resources">
+                                Resources
+                            </a>
+                        </li>
+                        <li>
+                            <a class="label" href="/health-institute/blog">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a class="label" href="/health-institute/contact">
+                                Start a project
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="subnav bg-gray-1">
+
+    <div class="grid-container subnav--grid">
+
+        <div class="nav-bar__subnav">
+
+            {% if absolute_url is string_containing "/corporate-wellness" %}
+            <a class="nav-bar__subnav-link color-blue-black nav-bar__subnav-title" href="/corporate-wellness">
+                Corporate Wellness
+            </a>
+
+            <ul class="nav-bar__list">
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/corporate-wellness/solutions">
+                        Solutions
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/corporate-wellness/resources">
+                        Resources
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/corporate-wellness/blog">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/corporate-wellness/gifts">
+                        Gifts
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/corporate-wellness/contact">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            {% elif absolute_url is string_containing "/patient-care" %}
+            <a class="nav-bar__subnav-link color-blue-black nav-bar__subnav-title" href="/patient-care">
+                Patient Care
+            </a>
+
+            <ul class="nav-bar__list">
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/patient-care/solutions">
+                        Solutions
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/patient-care/resources">
+                        Resources
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/patient-care/blog">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/patient-care/contact">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            {% elif absolute_url is string_containing "/health-institute" %}
+            <a class="nav-bar__subnav-link color-blue-black nav-bar__subnav-title" href="/health-institute">
+                Health Institute
+            </a>
+
+            <ul class="nav-bar__list">
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/health-institute/solutions">
+                        Solutions
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="http://obs.health.nokia.com/us/activity" target="_blank">
+                        Observatory
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/health-institute/resources">
+                        Research library
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/health-institute/blog">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar__subnav-link color-blue-black" href="/health-institute/contact">
+                        Start a project
+                    </a>
+                </li>
+            </ul>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+    $( document ).ready(function() {
+
+        {# menu subitems #}
+        $(".nav__mobile-toggle").click(function() {
+            if ($(this).hasClass("expanded")) {
+                $(this).parent(".nav__mobile-expand").parent(".nav__section").children(".nav__section-list").slideUp();
+            }
+            else {
+                $(this).parent(".nav__mobile-expand").parent(".nav__section").children(".nav__section-list").slideDown();
+            }
+            $(this).toggleClass("expanded");
+        });
+
+        {# mobile menu #}
+        $(".nav__mob-menu-toggle").click(function() {
+            var menu = $(".nav__menu");
+            if (menu.hasClass("expanded")) {
+                menu.slideUp();
+            }
+            else {
+                menu.slideDown();
+            }
+            menu.toggleClass("expanded");
+        });
+
+    });
+</script> 
+
+
+

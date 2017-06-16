@@ -27,7 +27,8 @@
 	}
 
 	form.hs-form .hs-form-field label,
-	h3.form-title {
+	h3.form-title,
+	* {
 	    color: $white;
 	}
 
@@ -74,7 +75,9 @@ fieldset.form-columns-1 .input {
 fieldset.form-columns-3 .hs-form-field:not(:last-child) .input,
 fieldset.form-columns-2 .hs-form-field:not(:last-child) .input,
 fieldset.form-columns-1 .hs-form-field:not(:last-child) .input {
-    margin-right: 30px !important; // space between fields
+    @media (min-width: $break-mob + 1) {
+	    margin-right: 30px !important; // space between fields
+	}
 }
 
 fieldset.form-columns-3 .hs-form-field {
@@ -87,7 +90,10 @@ fieldset.form-columns-3 .hs-form-field {
 
 form.hs-form .hs-form-required { // asterick for required fields
     color: $red;
-    padding-left: 3px;
+	padding-left: 3px;
+	position: absolute;
+	right: 8px;
+	top: 2px;
 }
 
 form.hs-form input,
@@ -99,14 +105,18 @@ form.hs-form input[type="submit"] {
     @include transition(.2s);
     border: 1px solid $gray-5;
     width: 100%;
-    box-sizing: border-box;
-
+    @include box-sizing(border-box);
     font-family: $npt-light;
     font-size: 20px;
 }
 
 form.hs-form input[type="submit"] {
 	padding: 8px;
+
+	&:hover {
+		background: $gray-5;
+		color: $white;
+	}
 }
 
 form.hs-form input[type="radio"],
@@ -142,6 +152,7 @@ form.hs-form select {
 form.hs-form .hs-form-field label {
     padding-bottom: 2px;
     display: block;
+	position: relative;
 
     &.hs-form-radio-display,
     &.hs-form-checkbox-display {
@@ -182,14 +193,6 @@ form.hs-form fieldset {
 	&.form-columns-1 .hs-input {
 	    width: 100%;
 	}
-
-	form.hs-form .hs-error-msgs {
-		&.inputs-list {
-			label {
-			    // color: $white;		
-			}
-		}
-	}
 }
 
 form.hs-form .hs-error-msgs {
@@ -206,7 +209,6 @@ form.hs-form .hs-error-msgs {
 		label {
 		    font-size: 14px;
 		    padding: 0 0;
-		    // color: $white;
 		}
 	}
 	* {

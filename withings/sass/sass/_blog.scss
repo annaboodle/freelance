@@ -1,0 +1,84 @@
+// more blog listing styles are found in _cta-blocks.scss
+
+// listing styles
+.blog__body {
+	padding: 80px 0 40px 0;
+}
+
+.blog__topics-nav {
+	font-size: 32px;
+	line-height: 1;
+	font-family: $npt-light;
+	margin: 0 11px;
+
+	@media (max-width: $break-large) {
+		font-size: 26px;
+		font-size: 1.625rem;
+		line-height: 38px;
+		line-height: 2.375rem;
+	}
+
+	ul {
+		@include display-flex;
+		@include flex-flow(row wrap);
+
+		@media (max-width: $break-mob) {
+			@include flex-direction(column);
+		}  
+	}
+
+	a {
+		padding: 0 24px;
+		line-height: 1.8;
+
+		@media (max-width: $break-mob) {
+			padding: 5px 0;
+		}  
+	}
+}
+
+// post styles
+.blog__post-body {
+	padding: 0 0 40px 0;
+}
+
+.blog__feat-img-wrap {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 565px;
+
+	@media (max-width: $break-large) {
+		height: 400px;
+	}   
+
+	@media (max-width: $break-mob) {
+		height: 300px;
+	}     
+}
+
+.blog__title {
+	margin: 30px 0 15px 0;
+	@include h2-styles;
+}
+
+.blog__author {
+	@include display-flex;
+	padding: 15px 0 15px 0;
+	@include align-items(center);
+}
+
+.blog__author-img-wrap {
+	padding: 0 20px 0 0;
+	@include display-flex;
+}
+
+.blog__author-img {
+	height: 60px;
+	@include border-radius(30px);
+}
+
+.blog__byline {
+	padding: 0 0;
+	margin: 0 0;
+}

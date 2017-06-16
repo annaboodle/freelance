@@ -49,19 +49,21 @@
     	color: $nokia-blue;
     }
 
-	&:after {
-		display: inline-block;
-		vertical-align: middle;
-		content: " ";
-		background-image: url(//cdn2.hubspot.net/hubfs/2776717/icons/icons-blue-1.0.1.svg);
-		background-position: 0 -125px;
-		width: 24px;
-		height: 24px;
-		margin-left: 8px;
-		top: -3px;
-		position: relative;
-		display: inline-block;
-	}
+    &.icon-blocks__header-arrow {
+		&:after {
+			display: inline-block;
+			vertical-align: middle;
+			content: "";
+			background-image: url(//cdn2.hubspot.net/hubfs/2776717/icons/icons-blue-1.0.1.svg);
+			background-position: 0 -125px;
+			width: 24px;
+			height: 24px;
+			margin-left: 8px;
+			top: -3px;
+			position: relative;
+			display: inline-block;
+		}
+    }
 }
 
 .icon-blocks__desc {

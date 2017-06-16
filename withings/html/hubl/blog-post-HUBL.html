@@ -1,0 +1,39 @@
+{% image "listing_img" label="Image for listing page" src="//cdn2.hubspot.net/hub/2776717/hubfs/Stock%20images/Studio%20macro%20of%20a%20stethoscope%20and%20digital%20tablet%20with%20shallow%20DOF%20evenly%20matched%20abstract%20on%20wood%20table%20background%20copy%20space.jpeg", export_to_template_context=True %}
+{% text "lp_url" label="URL of your landing page", value="http://www.withings.com", export_to_template_context=True %}
+
+<div class="blog__post-body">
+
+    {% if content.widgets.listing_img.body.src %}
+    <div class="blog__feat-img-wrap" style="background-image: url('{{ content.widgets.listing_img.body.src }}');">
+    </div>
+    {% endif %}
+
+    <div class="grid-container">
+        
+        <div class="blog__post">
+            <h1 class="blog__title">{{ content.name }}</h1>
+
+            <div class="blog__author">
+
+                {% if content.blog_post_author.avatar %} 
+                    <div class="blog__author-img-wrap"> 
+                        <img class="blog__author-img" src="{{ content.blog_post_author.avatar }}" alt="{{ content.blog_post_author.display_name }}">
+                    </div> 
+                {% endif %}
+
+                <p class="blog__byline">
+                    By <a class="blog__author-name" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">{{ content.blog_post_author.display_name }}</a> on {{ content.publish_date_localized }}
+                </p>
+
+            </div>
+
+            <div class="blog__post-body">
+                {{ content.post_body }}
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+

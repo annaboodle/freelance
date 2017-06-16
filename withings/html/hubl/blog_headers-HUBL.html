@@ -1,0 +1,61 @@
+<!-- BLOG HEADER - MAIN BLOG -->
+<div class="hero__wrap hero__wrap--bg" style="background-image: url('https://cdn2.hubspot.net/hubfs/2776717/blog/corporate%20wellness%20remote%20patient%20care.jpg')">
+
+    <div class="grid-container">
+
+        <div class="hero__inner  hero__inner--text-left">
+
+            <div class="hero__text hero__text--standard">
+
+                <h1 class="hero__head color-white">
+                    {% if absolute_url is string_containing "/blog/topic/health-institute" %}
+                        Research blog
+                    {% elif absolute_url is string_containing "/blog/topic/corporate-wellness" %}
+                        Corporate Wellness blog
+                    {% elif absolute_url is string_containing "/blog/topic/patient-care" %}
+                        Patient Care blog
+                    {% else %}
+                        {{ content.name }}
+                    {% endif %}
+                </h1>
+
+            </div>
+
+        </div>
+
+    </div> 
+
+</div>
+
+<!-- BLOG HEADER - RESOURCES BLOG -->
+<div class="hero__wrap hero__wrap--bg" style="background-image: url('https://cdn2.hubspot.net/hubfs/2776717/blog/health%20tech%20news%20and%20ebooks.jpg')">
+
+    <div class="grid-container">
+
+        <div class="hero__inner  hero__inner--text-left">
+
+            <div class="hero__text hero__text--standard">
+
+                <h1 class="hero__head color-white">
+                    {% if absolute_url is string_containing "/resources/topic/health-institute" %}
+                        Research library
+                    {% elif absolute_url is string_containing "/resources/topic/corporate-wellness" %}
+                        Corporate Wellness resources
+                    {% elif absolute_url is string_containing "/resources/topic/patient-care" %}
+                        Patient Care resources
+                    {% else %}
+                        {{ content.name }}
+                    {% endif %}
+                </h1>
+
+                <p class="hero__subhead l-size color-white">
+                   
+                </p> 
+
+            </div>
+
+        </div>
+
+    </div> 
+
+</div>

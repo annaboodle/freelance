@@ -1,0 +1,278 @@
+<div class="blog__body">
+
+    <div class="grid-container">
+
+        <div class="blog__topics-nav">
+            <ul>
+
+                {% if absolute_url is string_containing "/resources/topic/health-institute" %}
+                {# HEALTH INSTITUTE TAGS #}
+
+                <li>
+                    <a href="#">
+                        All
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/clinical-validity">
+                        Clinical validity
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/self-monitoring">
+                        Impact of self-monitoring
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/patient-outcomes">
+                        Patient outcomes
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/prediction-models">
+                        Prediction & models
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/remote-monitoring">
+                        Remote monitoring
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/data-insights">
+                        Data insights
+                    </a>
+                </li>
+
+                {% elif absolute_url is string_containing "/resources/topic/corporate-wellness" %}
+                {# CORPORATE WELLNESS TAGS #}
+                    
+                <li>
+                    <a href="#">
+                        All
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/corporate-wellness">
+                        Corporate wellness tags go here
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/patient-care">
+                        Another corporate wellness tag here
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/patient-care">
+                        Make sure to change the URLs to link to the topic pages
+                    </a>
+                </li>
+
+                {% elif absolute_url is string_containing "/resources/topic/patient-care" %}
+                {# PATIENT WELLNESS TAGS #}
+
+                <li>
+                    <a href="#">
+                        All
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/corporate-wellness">
+                        Patient care tags go here
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/patient-care">
+                        Another patient care tag here
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/patient-care">
+                        Make sure to change the URLs to link to the topic pages
+                    </a>
+                </li>
+
+                {% else %}
+                {# RESOURCE LISTING TAGS #}
+
+                <li>
+                    <a href="#">
+                        All
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/ebooks">
+                        Ebooks
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/webinars">
+                        Webinars
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/studies">
+                        Studies
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/topic/videos">
+                        Videos
+                    </a>
+                </li>
+
+                {% endif %}
+
+            </ul>
+        </div>
+
+        <div class="blog-card__container">
+
+            {% for content in contents %}
+
+                {% if loop.index == 3 %}
+
+                    {# START OF FIRST CTA CARD #}
+                    <div class="blog-card__wrap">
+
+                        <a class="blog-card blog-card--cta" href="#">
+
+                            <span class="blog-card__content">
+
+                                <p class="label">
+                                    Download now
+                                </p>
+
+                                <p class="ll-size">
+                                    Conducting our business with integrity
+                                </p>
+
+                            </span>
+
+                        </a>
+
+                    </div>
+                    {# END OF FIRST CTA CARD #}
+
+                    <div class="blog-card__wrap">
+
+                        <div class="blog-card">
+
+                            <div class="blog-card__photo" style="background-image: url('{{ content.widgets.listing_img.body.src }}')">  
+
+                            </div>
+
+                            <div class="blog-card__content">
+
+                                <p class="label">
+                                    {{ content.publish_date_localized }}
+                                </p>
+
+                                <h4>
+                                    <a href="{{ content.widgets.lp_url.body.value }}">
+                                        {{ content.name }}
+                                    </a>
+                                </h4>
+
+                            </div>
+
+                            <a class="arrow-link icon-gray-2" href="{{ content.widgets.lp_url.body.value }}">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                {% elif loop.index == 7 %}
+
+                    {# START OF SECOND CTA CARD #}
+                    <div class="blog-card__wrap">
+
+                        <a class="blog-card blog-card--cta" href="#">
+
+                            <span class="blog-card__content">
+
+                                <p class="label">
+                                    Download now
+                                </p>
+
+                                <p class="ll-size">
+                                    Conducting our business with integrity
+                                </p>
+
+                            </span>
+
+                        </a>
+
+                    </div>
+                    {# END OF SECOND CTA CARD #}
+
+                    <div class="blog-card__wrap">
+
+                        <div class="blog-card">
+
+                            <div class="blog-card__photo" style="background-image: url('{{ content.widgets.listing_img.body.src }}')">  
+
+                            </div>
+
+                            <div class="blog-card__content">
+
+                                <p class="label">
+                                    {{ content.publish_date_localized }}
+                                </p>
+
+                                <h4>
+                                    <a href="{{ content.widgets.lp_url.body.value }}">
+                                        {{ content.name }}
+                                    </a>
+                                </h4>
+
+                            </div>
+
+                            <a class="arrow-link icon-gray-2" href="{{ content.widgets.lp_url.body.value }}">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                {% else %}
+
+                    <div class="blog-card__wrap">
+
+                        <div class="blog-card">
+
+                            <div class="blog-card__photo" style="background-image: url('{{ content.widgets.listing_img.body.src }}')">  
+
+                            </div>
+
+                            <div class="blog-card__content">
+
+                                <p class="label">
+                                    {{ content.publish_date_localized }}
+                                </p>
+
+                                <h4>
+                                    <a href="{{ content.widgets.lp_url.body.value }}">
+                                        {{ content.name }}
+                                    </a>
+                                </h4>
+
+                            </div>
+
+                            <a class="arrow-link icon-gray-2" href="{{ content.widgets.lp_url.body.value }}">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                {% endif %}
+
+            {% endfor %}
+
+       </div>
+
+    </div>
+
+</div>

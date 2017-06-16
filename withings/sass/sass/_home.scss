@@ -1,38 +1,10 @@
-// .hover-zoom {
-// 	float: left;
-// 	margin: 0;
-// 	height: 180px;
-// 	// width: 300px;
-// 	transition: all .3s ease-in-out;
-// 	background-size: 100%;
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// 	// background-size: cover;
-// 	background-color: $white;
-// 	position: relative;
 
-// 	&:hover {
-// 		background-size: 105%;
-// 	}
-
-// 	p {
-// 		position: absolute;
-// 		bottom: 0;
-// 		left: 0;
-// 		width: 100%;
-// 		color: $white;
-// 		padding: 0.5em;
-// 		margin: 0;
-// 		box-sizing: border-box;
-// 	}
-// }
 $cell-padding: 35px;
 
 .home__panel {
 	position: relative;
 	overflow: hidden;
 	display: inline-block;
-    // background-color: $nokia-blue;
     width: 100%;
 
 	&:hover {
@@ -60,7 +32,6 @@ $cell-padding: 35px;
 			* {
 				color: $nokia-blue;
 			}
-			// color: 
 		}
 	}
 }
@@ -70,18 +41,10 @@ $cell-padding: 35px;
     margin: 0px 0 10px 0;
 }
 
-// .home__desc {
-// 	font-size: 24px;
-//     line-height: 1.4;
-//     margin: 0 0;
-
-// }
-
 .home__img {
     width: 100%;
     max-width: 100%;
     height: auto;
-    // min-height: 100%;
 	position: relative;
 	z-index: 1;
 	display: block;
@@ -100,6 +63,7 @@ $cell-padding: 35px;
 		@include flex-direction(column);
 	}
 }
+
 
 .home__main {
 	padding-top: $cell-padding;
@@ -138,7 +102,6 @@ $cell-padding: 35px;
 .home__main-col {
 	@include flex-basis(0);
 	@include flex-grow(1);
-	// padding-top: $cell-padding;
 
 	&:first-child {
 		padding-right: $cell-padding/2;
@@ -157,14 +120,11 @@ $cell-padding: 35px;
 	}
 }
 
-
-
 .home__main-1 {
 	min-height: 340px;
 }
 
 .home__main-2 {
-	// min-height: 250px;
 
 	.home__text {
 		position: relative;
@@ -220,16 +180,7 @@ $cell-padding: 35px;
 }
 
 .home__cta-block-copy {
-	// @include h2-styles;
-
-	// font-family: $nph-light;
-	// font-size: 35px;
-	// line-height: 1.2;
-
-
-
 	display: inline-block;
-
 	position: relative;
 	padding: 0 0 0 60px;
 
@@ -244,8 +195,6 @@ $cell-padding: 35px;
 		top: 8px;
 		position: absolute;
 	}
-
-
 }
 
 .home__desc, 
@@ -271,42 +220,37 @@ $cell-padding: 35px;
 	background-size: auto 105%;
 	background-position: center;
 	background-repeat: no-repeat;
-	// background-size: cover;
 	&:hover {
 		background-size: auto 110%;
 	}
 }
 
-// @media (min-width: $break-mob + 1) {
-// 	.home__main-1,
-// 	.home__main-3,
-// 	.home__top-1,
-// 	.home__top-2 {
-// 		background: none !important;
-// 	}
-// }
+@media (max-width: $break-large) {
+
+	.home__top-1 {
+		margin: 0 0;
+	}
+
+	.home__top-1,
+	.home__top-2 {
+		min-height: 350px;
+		background-size: cover;
+
+		&:hover {
+			background-size: cover;
+		}
+
+		.home__text {
+			position: relative;
+		}
+
+		.home__img {
+			display: none;
+		}
+	}
+}
 
 @media (max-width: $break-mob) {
-	// .home__main-1,
-	// .home__main-3 {
-	// 	.home__text {
-	// 		position: relative;
-	// 	    padding: 40px 0;
-	// 	}
-	// 	.home__title {
-	// 		color: $nokia-blue;
-	// 	}
-	// 	.home__desc {
-	// 		color: $gray-5;
-	// 		@include blue-arrow-after;
-	// 	}
-	// }
-
-	// .home__main-2 .home__text {
-	// 	position: relative;
-	//     min-height: 0;
-	// }
-
 	.home__top-1 {
 		margin: 0 0;
 	}
@@ -315,10 +259,6 @@ $cell-padding: 35px;
 	.home__main-3,
 	.home__top-1,
 	.home__top-2 {
-		// background-position: center;
-		// background-repeat: no-repeat;
-		// background-size: cover;
-		// @include flex-basis(auto);
 		min-height: 350px;
 		background-size: cover;
 
@@ -341,4 +281,3 @@ $cell-padding: 35px;
 		}
 	}
 }
-
